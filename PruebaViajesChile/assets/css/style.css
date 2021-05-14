@@ -1,0 +1,29 @@
+    .navbar-brand img {
+        height: auto;
+        width: auto;
+        max-width: 299px;
+        max-height: 37px
+    }
+    
+    body {
+        background: #000000;
+    }
+    
+    h2,
+    h5,
+    a,
+    p,
+    h4 {
+        color: #ffffff;
+    }
+    
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+    }
+    
+    .grid-3 i {
+        color: #ffffff;
+        display: block;
+    }

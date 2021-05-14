@@ -1,0 +1,49 @@
+.card-title {
+    color: #212529;
+    font: 20pt Roboto, light;
+    text-align: left;
+}
+
+.card-text {
+    color: #707070;
+    font: 16pt Roboto, light;
+    text-align: left;
+}
+
+.card-link-precio-1 {
+    color: #707070;
+    font: 16pt Roboto, light;
+    text-align: left;
+}
+
+.card-link-precio-2 {
+    color: #28A745;
+    font: 20pt Roboto, Medium;
+    text-align: left;
+}
+
+.form-group p {
+    color: #707070;
+    font: 16pt Roboto, light;
+    text-align: left;
+}
+
+h3 {
+    color: #ffffff;
+    font: 20pt Roboto, Medium;
+    text-align: center;
+}
+
+footer img {
+    height: auto;
+    width: auto;
+    max-width: 82pt;
+    max-height: 24pt;
+}
+
+nav img {
+    height: auto;
+    width: auto;
+    max-width: 86pt;
+    max-height: 25pt;
+}

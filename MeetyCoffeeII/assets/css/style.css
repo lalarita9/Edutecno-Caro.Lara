@@ -1,0 +1,170 @@
+body {
+    text-align: center;
+    color: #000f08;
+    margin: 0;
+    font-family: 'Open Sans' sans-serif;
+}
+
+.oscuro {
+    background: #000f08;
+    color: #ffffff;
+    width: 100vw;
+}
+
+.oscuro a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+}
+
+.oscuro li {
+    padding: 15px;
+    font: bold 14px 'Open Sans' sans-serif;
+    display: inline-block;
+}
+
+.sweet-brown {
+    text-align: left;
+    background: #a4452c;
+    color: #ffffff;
+    padding: 50px;
+    white-space: nowrap;
+}
+
+.hero-section {
+    text-align: right;
+    background-image: url('../img/bf-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 0.125em 0.25em 0.125em #707070;
+    text-shadow: 2px 3px 2px #707070;
+    padding: 50px 50px 250px 50px
+}
+
+body * {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+section,
+footer {
+    margin-top: 75px;
+}
+
+nav {
+    padding: 15px;
+    text-align: left;
+}
+
+footer {
+    padding: 75px;
+}
+
+footer i {
+    margin: 0 0.25em 0.5em 0.25em;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.centrado {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.charla-speaker {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.charla-texto {
+    width: 72.5%;
+    vertical-align: middle;
+    margin-left: 2.5%;
+    white-space: normal;
+    text-align: left;
+    margin-right: 2;
+}
+
+.text-center {
+    width: 75%;
+    margin: auto;
+    padding: 25px;
+    text-align: justify;
+}
+
+.icono {
+    width: 2rem;
+}
+
+.icono svg {
+    fill: #ffffff;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 3.75em;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.subtitulo {
+    font-weight: 400;
+}
+
+.subtitulo,
+h4,
+h5 {
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+#ubicacion h2 {
+    margin: 1em auto;
+}
+
+.sweet-brow h3,
+.sweet-brown h5 {
+    margin-bottom: 0.5em;
+}
+
+#eventos h2 {
+    margin-bottom: 1em;
+}
+
+#eventos h3 {
+    margin: 1em auto;
+}
+
+p {
+    font-weight: 400;
+    margin: 0.2em;
+    font-size: 1.2em;
+    line-height: 1.7;
+}
