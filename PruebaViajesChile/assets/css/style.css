@@ -15,6 +15,7 @@
     p,
     h4 {
         color: #ffffff;
+        font-family: sans-serif;
     }
     
     .grid-3 {
@@ -26,4 +27,30 @@
     .grid-3 i {
         color: #ffffff;
         display: block;
+    }
+    
+    .jumbotron {
+        margin: auto;
+        padding: auto;
+    }
+    
+    .jumbotron h6 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    footer {
+        margin: auto;
+        padding: auto;
+        top: auto;
+    }
+    
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+    
+    .text-right {
+        margin-right: 160px;
     }
