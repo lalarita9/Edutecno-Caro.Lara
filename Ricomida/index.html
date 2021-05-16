@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2? familia=Langosta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+    <!--Navegador-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand">
-                <h1 class="logo">Ricomida</h1>
+                <h1 class="logo"><i>Ricomida</i></h1>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,39 +41,177 @@
             </div>
         </div>
     </nav>
-    <section class="py-5 container">
-        <div class="card mb-3" style="width:auto;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="assets/img/principal.jpg" class="card-img" alt="imagen principal">
+
+    <!--Encabezado-->
+    <section class="py-3">
+        <div class="container pt-4">
+            <div class="row align-items-center">
+                <div class="col-ms-6">
+                    <img src="assets/img/principal.jpg" alt="principal" style="width: 35rem;">
                 </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h5>
-                        <hr>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="col-md-6 ">
+                    <h1><b>PIZZA AL ESTILO <br> CHICAGO CON <br> ESPINACAS Y CHAMPIÑONES</b></h1>
+                    <hr>
+                    <p class="text-h3"><b>110 MIN /6 A 8 PORCIONES</b></p>
+                    <div>
+                        <input id="enviar" type="submit" class="btn btn-light" value="Enviar por correo" title="Presiona para enviar a tu correo">
+                        <input type="texto" class="btn btn-light" value="Añadir a favoritos" title="Agregar esta receta a tus favoritos">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container">
-        <div class="row row-cols-4">
-            <div class="col"><img src="assets/img/slider-1.png" alt="slider1" class="img-thumbnail"></div>
-            <div class="col"><img src="assets/img/slider-2.png" alt="slider2" class="img-thumbnail"></div>
-            <div class="col"><img src="assets/img/slider-3.png" alt="slider3" class="img-thumbnail"></div>
-            <div class="col"><img src="assets/img/slider-4.png" alt="slider4" class="img-thumbnail"></div>
+    <!--Carousel-->
+    <section id="cont.car" class="container d-none d-sm-inline">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row row-cols-4">
+                            <div class="col"><img src="assets/img/slider-1.png" alt="slider1" style="width: 15rem;"></div>
+                            <div class="col"><img src="assets/img/slider-2.png" alt="slider2" style="width: 15rem;"></div>
+                            <div class="col"><img src="assets/img/slider-3.png" alt="slider3" style="width: 15rem;"></div>
+                            <div class="col"><img src="assets/img/slider-4.png" alt="slider4" style="width: 15rem;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row row-cols-4">
+                            <div class="col"><img src="assets/img/slider-5.png" alt="slider5" style="width: 15rem;"></div>
+                            <div class="col"><img src="assets/img/slider-6.png" alt="slider6" style="width: 15rem;"></div>
+                            <div class="col"><img src="assets/img/slider-7.png" alt="slider7" style="width: 15rem;"></div>
+                            <div class="col"><img src="assets/img/slider-8.png" alt="slider8" style="width: 15rem;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!--Texto columnas cambio color pocisión cursor-->
+    <section class="container py-3">
+        <br>
+        <hr>
+        <div class="decoracion grid-2">
+            <div class="linea">
+                <h2 id="on"><b id="contenido">INGREDIENTES</b></h2>
+                <br>
+                <h3>Masa</h3>
+                <br>
+                <p>20 gr de levadura seca instantánea</p>
+                <p>1 cucharadita de azúcar</p>
+                <p>500 ml agua tibia</p>
+                <p>100 ml aceite vegetal</p>
+                <p>4 cucharadas de aceite de oliva</p>
+                <p>65 gr harina de maíz fina (chuchoca)</p>
+                <p>2 cucharaditas de sal</p>
+                <p>625 gr harina</p>
+                <p>Salsa</p>
+                <br>
+                <p>5 cucharadas de aceite de oliva</p>
+                <p>1/2 cebolla picada en cubos finos</p>
+                <p>2 cucharaditas de sal</p>
+                <p>3 cucharadas de Orégano Gourmet</p>
+                <p>1/2 cucharadas de Albahaca Gourmet</p>
+                <p>2 tarro de tomates en cubos al natural</p>
+                <p>2 cucharaditas de azúcar</p>
+                <p>Relleno</p>
+                <br>
+                <p>1/2 cebolla, en cubos</p>
+            </div>
+            <div>
+                <h2 id="on1"><b id="contenido1">PREPARACIÓN</b></h2>
+                <br>
+                <br>
+                <br>
+                <p>1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezlar bien. Amasar y agregar el resto de harina, la cantidad necesaria
+                    para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasado para que la masa no se pegue). Poner la masa en un bol aceitado, tapar
+                    con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</p>
+                <br>
+                <p>2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agragar el ajo y cocinar por 30 segundos.
+                    Agregar los tomates junto al jugo de tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</p>
+
+                <br>
+                <p>3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.</p>
+                <br>
+                <p>4. Calentar el horno a 220C.</p>
+                <br>
+                <p>5. Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella, luego
+                    terminar con la salsa de tomates y finalmene espolvorear el queso rallado.</p>
+                <br>
+                <p>6. Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</p>
+
+            </div>
+
         </div>
-    </div>
-    </div>
+    </section>
 
+    <!--Card función Toggle-->
+    <section class="container py-3">
+
+        <hr>
+        <div>
+            <h2 class="text-center"><b>RECETAS RELACIONADAS</b></h2>
+            <div class="row py-3">
+                <div class="col-md-4">
+                    <div class="card mx-3 mb-5 accordion" id="accordionExample" style="width: 18rem;">
+                        <img src="assets/img/recipe-card-1.png" class="card-img-top collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" alt="recipe1">
+                        <div class="card-body" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h5 class="card-title collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">PANQUEQUE CON MANJAR Y CREMA</h5>
+                            <p class="card-text collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">Mus erim elementum dignissim class eleifend justo. ut nunc magnis est vulputate nostra, blandit erat luctus</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-3 mb-5 " style="width: 18rem;">
+                        <img src="assets/img/recipe-card-2.png" class="card-img-top collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" alt="recipe2">
+                        <div class="card-body" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h5 class="card-title colapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">TIRAMISÚ</h5>
+                            <p class="card-text collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">Congue fermentum dignissim rhancus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla omare consequat.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-3 mb-5" style="width: 18rem;">
+                        <img src="assets/img/recipe-card-3.png" class="card-img-top collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample" alt="recipe3">
+                        <div class="card-body" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h5 class="card-title collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">PLATEADA</h5>
+                            <p class="card-text collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordionExample">Cubilia elementum posuere arcu rhancus egestas lectus, diam aliquam lacreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rec text-center">
+        <div class="jumbotron" style="background-color:#ff0b0b;">
+            <h1 class="display-4">SUSCRÍBETE A NUESTRO NEWSLETTER</h1>
+            <p class="lead">y obten las mejores recetas que tenemos en
+                <i face="Lobster">Ricomida</i>
+            </p>
+            <a class="btn btn-light btn-lg" href="#" role="button">Empezar</a>
+        </div>
+    </section>
+
+
+
+    <footer class="text-center bg-dark">
+        <div>
+            <h1><i>Ricomida</i></h1>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
-<script src="assets/js/main.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
 
 </html>

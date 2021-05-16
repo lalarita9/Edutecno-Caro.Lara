@@ -1,3 +1,58 @@
-.logo {
-    font-family: 'Lobster', cursive;
-}
+    .logo {
+        font-family: 'Lobster Two', cursive;
+    }
+    
+    .carousel-indicators {
+        bottom: -50px;
+    }
+    
+    .carousel-indicators li {
+        background: #000000;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border-bottom: 2px;
+    }
+    
+    .carousel-indicators .active {
+        background: #000000;
+    }
+    
+    button .title {
+        background: #000000;
+    }
+    
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+    
+    .decoracion h1 {
+        text-decoration: underline;
+    }
+    
+    .linea p {
+        line-height: 10px;
+    }
+    
+    h1,
+    p,
+    h3 {
+        font-family: Arial, Helvetica, Sans-Serif, "Myriad Pro";
+    }
+    
+    hr {
+        border: 2px solid #9b9898;
+    }
+    
+    footer h1 {
+        font-family: 'Lobster Two', cursive;
+        color: #ffffff;
+    }
+    
+    .display-4,
+    .lead {
+        color: #ffffff;
+        font-family: Arial, Helvetica, Sans-Serif, "Myriad Pro";
+    }
