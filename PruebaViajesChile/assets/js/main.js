@@ -1,5 +1,7 @@
 //Función tooltips a icon.
-
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})
 
 //Función direccionar a página formulario.
 function Funcion() {
