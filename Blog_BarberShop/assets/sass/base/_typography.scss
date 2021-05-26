@@ -1,0 +1,30 @@
+/*base typography*/
+
+.main {
+    .capa h1 {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-weight: 900;
+        color: #fff;
+    }
+    p {
+        font-family: 'Roboto';
+        font-size: 16px medium;
+        color: #6C6E70;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    .nombre h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 30px xx-large;
+        font-weight: 900;
+        font-style: italic;
+        color: #121619;
+    }
+}
+
+.nombre a {
+    font-family: 'Roboto';
+    color: #ECBCBA;
+    font-size: 16px medium;
+}

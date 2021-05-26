@@ -1,0 +1,29 @@
+/* main-section layout*/
+
+.contenido-img {
+    position: relative;
+    .capa h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.jumbotron {
+    background-color: #fff;
+    border-style: solid;
+    border-color: #E6E7E7;
+    border-width: 2px;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.color-bgr {
+    background-color: #E6E7E7;
+}
+
+.nombre {
+    margin-top: 10%;
+    margin-top: 10%;
+}

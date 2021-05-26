@@ -1,0 +1,105 @@
+/*base typography*/
+.main .capa h1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 900;
+  color: #fff;
+}
+.main p {
+  font-family: "Roboto";
+  font-size: 16px medium;
+  color: #6C6E70;
+  font-weight: 400;
+  line-height: 40px;
+}
+.main .nombre h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 30px xx-large;
+  font-weight: 900;
+  font-style: italic;
+  color: #121619;
+}
+
+.nombre a {
+  font-family: "Roboto";
+  color: #ECBCBA;
+  font-size: 16px medium;
+}
+
+/* Header Layout */
+.header {
+  background-color: #121619;
+}
+
+.logo img {
+  width: 83px;
+}
+
+/* main-section layout*/
+.contenido-img {
+  position: relative;
+}
+.contenido-img .capa h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jumbotron {
+  background-color: #fff;
+  border-style: solid;
+  border-color: #E6E7E7;
+  border-width: 2px;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.color-bgr {
+  background-color: #E6E7E7;
+}
+
+.nombre {
+  margin-top: 10%;
+  margin-top: 10%;
+}
+
+/*layout footer*/
+.footer {
+  background-color: #222323;
+}
+.footer img {
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*components button*/
+.color {
+  background: #6C6E70;
+  color: #ffffff;
+}
+
+.boton-flecha {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.boton-flecha i {
+  color: #ffffff;
+}
+
+.pagination .page-link {
+  color: #121619;
+}
+.pagination li .color-text {
+  color: #D1D1D1;
+}
+.pagination li .bg-color {
+  background-color: #6C6E70;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=main.css.map */

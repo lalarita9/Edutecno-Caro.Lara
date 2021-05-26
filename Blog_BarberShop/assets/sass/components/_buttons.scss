@@ -1,0 +1,29 @@
+/*components button*/
+
+.color {
+    background: #6C6E70;
+    color: #ffffff;
+}
+
+.boton-flecha {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    i {
+        color: #ffffff;
+    }
+}
+
+.pagination {
+    .page-link {
+        color: #121619;
+    }
+    li .color-text {
+        color: #D1D1D1;
+    }
+    li .bg-color {
+        background-color: #6C6E70;
+        color: #ffffff;
+    }
+}
