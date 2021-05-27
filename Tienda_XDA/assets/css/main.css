@@ -1,0 +1,79 @@
+/*base typography*/
+/* Header Layout */
+nav .logo {
+  background-color: black;
+}
+
+/* main-section layout*/
+/*layout footer*/
+.footer {
+  background-color: #222323;
+}
+.footer img {
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*layout grid*/
+/*components button*/
+.color {
+  background: #6C6E70;
+  color: #ffffff;
+}
+
+.boton-flecha {
+  position: absolute;
+  display: block;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.boton-flecha i {
+  color: #ffffff;
+}
+
+.pagination .page-link {
+  color: #121619;
+}
+.pagination li .color-text {
+  color: #D1D1D1;
+}
+.pagination li .bg-color {
+  background-color: #6C6E70;
+  color: #ffffff;
+}
+
+/*vendor jqueryiu*/
+@media (max-width: 767px) {
+  .main .capa h1 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 18px xx-large;
+    font-weight: 400;
+    color: #fff;
+  }
+  .main .nombre h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 18px xx-large;
+    font-weight: 900;
+    font-style: italic;
+    color: #121619;
+  }
+}
+@media (max-width: 767px) {
+  .jumbotron img {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .boton-tx {
+    text-align-last: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
