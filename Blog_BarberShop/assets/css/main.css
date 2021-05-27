@@ -59,11 +59,6 @@
   background-color: #E6E7E7;
 }
 
-.nombre {
-  margin-top: 10%;
-  margin-top: 10%;
-}
-
 /*layout footer*/
 .footer {
   background-color: #222323;
@@ -75,6 +70,7 @@
   margin-right: auto;
 }
 
+/*layout grid*/
 /*components button*/
 .color {
   background: #6C6E70;
@@ -83,6 +79,7 @@
 
 .boton-flecha {
   position: absolute;
+  display: block;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -100,6 +97,37 @@
 .pagination li .bg-color {
   background-color: #6C6E70;
   color: #ffffff;
+}
+
+/*vendor jqueryiu*/
+@media (max-width: 767px) {
+  .main .capa h1 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 18px xx-large;
+    font-weight: 400;
+    color: #fff;
+  }
+  .main .nombre h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 18px xx-large;
+    font-weight: 900;
+    font-style: italic;
+    color: #121619;
+  }
+}
+@media (max-width: 767px) {
+  .jumbotron img {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .boton-tx {
+    text-align-last: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
