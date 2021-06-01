@@ -1,1 +1,16 @@
-/* main-section layout*/
+/*layout main-section*/
+
+.main {
+    .i__h4 {
+        @include contenedor (200px, 10px, 15%, 30px, 10px, 15px);
+    }
+    .i__label {
+        @include contenedor (0px, 0px, 15%, 30px, 5px, 0px);
+    }
+    .i__input {
+        @include contenedor (200px, 10px, 15%, 10px, 5px, 0px);
+    }
+    .position__texto {
+        writing-mode: vertical-lr;
+    }
+}

@@ -1,14 +1,23 @@
-// main.scss # Manifest File
-@import 'abstracts/variables';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
-@import 'base/reset';
-@import 'base/typography';
-@import 'layout/header';
-@import 'layout/forms';
-@import 'layout/main-section';
-@import 'layout/footer';
-@import 'layout/grid';
-@import 'components/buttons';
-@import 'components/inputs';
-@import 'vendors/jqueryiu'
+@import 'abstracts/variables',
+'abstracts/functions',
+'abstracts/mixins',
+'abstracts/placeholders';
+@import 'vendors/bootstrap',
+'vendors/jquery-ui';
+@import 'base/reset',
+'base/typography';
+@import 'layout/navigation',
+'layout/main-section',
+'layout/grid',
+'layout/header',
+'layout/footer',
+'layout/sidebar',
+'layout/forms';
+@import 'components/buttons',
+'components/carousel',
+'components/cover',
+'components/dropdown';
+@import 'pages/home',
+'pages/contact';
+@import 'themes/theme',
+'themes/admin';

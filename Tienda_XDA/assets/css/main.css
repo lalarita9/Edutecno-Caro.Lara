@@ -1,79 +1,98 @@
-/*base typography*/
-/* Header Layout */
-nav .logo {
-  background-color: black;
+/*abstracts variables*/
+/*abstracts mixins*/
+/*base reset*/
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* main-section layout*/
-/*layout footer*/
-.footer {
-  background-color: #222323;
+/*base typography*/
+.main .i__h1 {
+  font-family: Old Standard TT;
+  color: #0C0910;
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.footer img {
-  display: block;
-  width: 100px;
-  margin-left: auto;
-  margin-right: auto;
+.main .i__p {
+  font-family: Relaway;
+  color: #646266;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: none;
+}
+.main .i__h4 {
+  font-family: Old Standard TT;
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: none;
+}
+.main .i__label {
+  font-family: Relaway;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: none;
+}
+.main .position__texto {
+  font-family: Relaway;
+  color: #0C0910;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+/*layout main-section*/
+.main .i__h4 {
+  width: 200px;
+  height: 10px;
+  margin-top: 30px;
+  margin-left: 15%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.main .i__label {
+  width: 0px;
+  height: 0px;
+  margin-top: 30px;
+  margin-left: 15%;
+  padding: 5px;
+  margin-bottom: 0px;
+}
+.main .i__input {
+  width: 200px;
+  height: 10px;
+  margin-top: 10px;
+  margin-left: 15%;
+  padding: 5px;
+  margin-bottom: 0px;
+}
+.main .position__texto {
+  writing-mode: vertical-lr;
 }
 
 /*layout grid*/
-/*components button*/
-.color {
-  background: #6C6E70;
-  color: #ffffff;
+.main__grid__container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 2fr 2fr 1fr 3fr;
 }
-
-.boton-flecha {
-  position: absolute;
-  display: block;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.main__grid__container .main__grid__item1 {
+  grid-column: 1/span 4;
+  grid-row: 1;
+  align-items: center;
 }
-.boton-flecha i {
-  color: #ffffff;
+.main__grid__container .main__grid__item4 {
+  grid-column: 5;
+  grid-row: 1/span 2;
 }
-
-.pagination .page-link {
-  color: #121619;
+.main__grid__container .main__grid__item2 {
+  grid-column: 1/span 3;
+  background-color: #0C0910;
 }
-.pagination li .color-text {
-  color: #D1D1D1;
-}
-.pagination li .bg-color {
-  background-color: #6C6E70;
-  color: #ffffff;
-}
-
-/*vendor jqueryiu*/
-@media (max-width: 767px) {
-  .main .capa h1 {
-    font-family: "Playfair Display", serif;
-    font-style: italic;
-    font-size: 18px xx-large;
-    font-weight: 400;
-    color: #fff;
-  }
-  .main .nombre h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 18px xx-large;
-    font-weight: 900;
-    font-style: italic;
-    color: #121619;
-  }
-}
-@media (max-width: 767px) {
-  .jumbotron img {
-    height: auto;
-    width: auto;
-    max-width: 100px;
-    max-height: 100px;
-  }
-}
-@media (max-width: 767px) {
-  .boton-tx {
-    text-align-last: center;
-  }
+.main__grid__container .main__grid__item3 {
+  align-self: center;
 }
 
 /*# sourceMappingURL=main.css.map */
