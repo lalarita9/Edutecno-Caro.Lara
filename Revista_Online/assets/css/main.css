@@ -151,6 +151,7 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
+  grid-auto-rows: 43%;
 }
 .main__contenido__grid .lateral__navegacion {
   display: flex;
