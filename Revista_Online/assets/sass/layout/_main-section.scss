@@ -1,0 +1,67 @@
+            /*layout main-section*/
+            
+            .main__contenido__grid {
+                width: 90%;
+                max-width: 1000px;
+                margin: 1.6em auto;
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 1.6em;
+                display: flex;
+                .contenido__lateral {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                    padding: 0 25px;
+                    .lateral__nosotros {
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                    }
+                    .lateral__taggs {
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                    }
+                    .lateral__destacados {
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                    }
+                }
+                .contenido_cuerpo1 {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    grid-gap: 10px;
+                    grid-auto-rows: 40%;
+                }
+                .lateral__navegacion {
+                    display: flex;
+                    list-style: none;
+                    margin-top: 10px;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .lateral__items {
+                    margin: 0 10px;
+                    background-color: $ruby;
+                    text-align: center;
+                    border: $ruby;
+                    border-radius: 2px;
+                }
+                .items__link {
+                    text-decoration: none;
+                }
+                .imagenes {
+                    position: relative;
+                    display: block;
+                    margin: auto;
+                }
+            }
+            
+            .suscripcion__mensaje {
+                clear: both;
+                height: 200px;
+                width: 100vw;
+                text-align: center;
+                background-color: $ligthgray;
+                padding: 50px;
+            }

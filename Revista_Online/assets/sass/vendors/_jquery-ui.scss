@@ -1,0 +1,55 @@
+/*vendor jquery-ui*/
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 600px;
+        height: auto;
+    }
+    .header {
+        width: 100%;
+        .header__navbar {
+            width: 100%;
+            .navbar__logo {
+                font-size: $size1;
+            }
+            .navegacion__item1 {
+                visibility: hidden;
+            }
+            .navbar__navegacion {
+                margin-left: 2%;
+            }
+            .navbar__buscar {
+                margin-right: 30%;
+            }
+        }
+    }
+    .main__contenido__grid {
+        width: 100%;
+        .contenido_cuerpo1 {
+            width: 100%;
+            display: block;
+            .cuerpo__imagen1,
+            .cuerpo__imagen2,
+            .cuerpo__imagen3,
+            .cuerpo__imagen4,
+            .cuerpo__imagen5,
+            .cuerpo__imagen6 {
+                padding: 5px;
+            }
+            .imagenes {
+                width: 100%;
+                height: 200px;
+                margin: 4px auto;
+            }
+        }
+        .contenido__lateral {
+            display: none;
+        }
+    }
+    .suscripcion__mensaje {
+        width: 100%;
+    }
+    .footer {
+        width: 100%;
+    }
+}

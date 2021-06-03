@@ -1,0 +1,26 @@
+/*layout header*/
+
+.header__navbar {
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    border-bottom: 1px solid $griss;
+    line-height: 75px;
+    .navbar__logo {
+        padding: 0 00px;
+        margin-left: 35px;
+        position: relative;
+    }
+    .navbar__navegacion {
+        display: flex;
+        list-style: none;
+        margin-left: 55%;
+    }
+    .navegacion__link {
+        text-decoration: none;
+    }
+    .navegacion__item1,
+    .navegacion__item2 {
+        margin: 0 5px;
+    }
+}

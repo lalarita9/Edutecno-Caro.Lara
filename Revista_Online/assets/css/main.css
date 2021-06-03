@@ -1,0 +1,280 @@
+/*abstracts variables*/
+/*abstracts mixins*/
+/*base reset*/
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f3e6;
+}
+
+/*base typography*/
+.header .navbar__logo {
+  font-family: "Limelight", cursive;
+  font-size: 50px;
+  color: #fbb79e;
+}
+.header .navegacion__link {
+  font-family: "Century Gothic";
+  font-size: 14px;
+  color: #4c384a;
+}
+.header .buscar__control {
+  font-family: "Century Gothic";
+  font-style: italic;
+  font-size: 12px;
+}
+
+.main .contenido__lateral .lateral__nosotros p {
+  font-family: "Century Gothic";
+  font-size: 14px;
+  color: #4c384a;
+}
+.main .contenido__lateral .lateral__nosotros h3 {
+  font-family: "Century Gothic";
+  font-weight: bold;
+  font-size: 16px;
+}
+.main .contenido__lateral .lateral__taggs h3 {
+  font-family: "Century Gothic";
+  font-weight: bold;
+  font-size: 16px;
+}
+.main .contenido__lateral .lateral__taggs .items__link {
+  font-family: "Century Gothic";
+  font-size: 12px;
+  color: #FFF;
+}
+.main .contenido__lateral .lateral__destacados h3 {
+  font-family: "Century Gothic";
+  font-weight: bold;
+  font-size: 16px;
+}
+.main .contenido__lateral .lateral__destacados p {
+  font-family: "Century Gothic";
+  font-weight: bold;
+  font-size: 12px;
+  color: #4c384a;
+}
+.main .contenido_cuerpo1 h2 {
+  font-family: "Century Gothic";
+  font-size: 20px;
+}
+.main p {
+  font-family: "Century Gothic";
+  font-size: 14px;
+  color: #4c384a;
+}
+
+.suscripcion__mensaje .mensaje__h3 {
+  font-family: "Century Gothic";
+  font-size: 30px;
+}
+.suscripcion__mensaje p {
+  font-family: "Century Gothic";
+  font-size: 14px;
+  color: #4c384a;
+}
+
+.mensaje__boton {
+  font-family: "Century Gothic";
+  font-size: 12px;
+  color: #FFF;
+}
+
+.footer p {
+  font-family: "Century Gothic";
+  font-size: 14px;
+  color: #4c384a;
+}
+
+/*layout header*/
+.header__navbar {
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  border-bottom: 1px solid #d4d0d4;
+  line-height: 75px;
+}
+.header__navbar .navbar__logo {
+  padding: 0 0px;
+  margin-left: 35px;
+  position: relative;
+}
+.header__navbar .navbar__navegacion {
+  display: flex;
+  list-style: none;
+  margin-left: 55%;
+}
+.header__navbar .navegacion__link {
+  text-decoration: none;
+}
+.header__navbar .navegacion__item1,
+.header__navbar .navegacion__item2 {
+  margin: 0 5px;
+}
+
+/*layout main-section*/
+.main__contenido__grid {
+  width: 90%;
+  max-width: 1000px;
+  margin: 1.6em auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.6em;
+  display: flex;
+}
+.main__contenido__grid .contenido__lateral {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 0 25px;
+}
+.main__contenido__grid .contenido__lateral .lateral__nosotros {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.main__contenido__grid .contenido__lateral .lateral__taggs {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.main__contenido__grid .contenido__lateral .lateral__destacados {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.main__contenido__grid .contenido_cuerpo1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+.main__contenido__grid .lateral__navegacion {
+  display: flex;
+  list-style: none;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.main__contenido__grid .lateral__items {
+  margin: 0 10px;
+  background-color: #f26968;
+  text-align: center;
+  border: #f26968;
+  border-radius: 2px;
+}
+.main__contenido__grid .items__link {
+  text-decoration: none;
+}
+.main__contenido__grid .imagenes {
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.suscripcion__mensaje {
+  clear: both;
+  height: 200px;
+  width: 100vw;
+  text-align: center;
+  background-color: #ebeced;
+  padding: 50px;
+}
+
+/*layout footer*/
+.footer {
+  height: 25px;
+  width: 100vw;
+  border-bottom: 1px solid #193446;
+  text-align: center;
+  line-height: 25px;
+}
+
+/*layout grid*/
+/*layout buttons*/
+.header__navbar .navbar__buscar {
+  margin-right: 10px;
+}
+.header__navbar .navbar__buscar .buscar__control {
+  border-radius: 50px;
+  border: 1px solid #d4d0d4;
+  padding: 3px;
+  width: 100px;
+}
+
+.suscripcion__mensaje .mensaje__input {
+  border: none;
+  padding: 0px;
+  width: 120px;
+}
+.suscripcion__mensaje .mensaje__boton {
+  background-color: #f26968;
+  border: none;
+  padding: 0px;
+  width: 100px;
+  text-align: center;
+}
+
+/*vendor jquery-ui*/
+@media screen and (max-width: 768px) {
+  body {
+    width: 600px;
+    height: auto;
+  }
+
+  .header {
+    width: 100%;
+  }
+  .header .header__navbar {
+    width: 100%;
+  }
+  .header .header__navbar .navbar__logo {
+    font-size: 50px;
+  }
+  .header .header__navbar .navegacion__item1 {
+    visibility: hidden;
+  }
+  .header .header__navbar .navbar__navegacion {
+    margin-left: 2%;
+  }
+  .header .header__navbar .navbar__buscar {
+    margin-right: 30%;
+  }
+
+  .main__contenido__grid {
+    width: 100%;
+  }
+  .main__contenido__grid .contenido_cuerpo1 {
+    width: 100%;
+    display: block;
+  }
+  .main__contenido__grid .contenido_cuerpo1 .cuerpo__imagen1,
+.main__contenido__grid .contenido_cuerpo1 .cuerpo__imagen2,
+.main__contenido__grid .contenido_cuerpo1 .cuerpo__imagen3,
+.main__contenido__grid .contenido_cuerpo1 .cuerpo__imagen4,
+.main__contenido__grid .contenido_cuerpo1 .cuerpo__imagen5,
+.main__contenido__grid .contenido_cuerpo1 .cuerpo__imagen6 {
+    padding: 5px;
+  }
+  .main__contenido__grid .contenido_cuerpo1 .imagenes {
+    width: 100%;
+    height: 200px;
+    margin: 4px auto;
+  }
+  .main__contenido__grid .contenido__lateral {
+    display: none;
+  }
+
+  .suscripcion__mensaje {
+    width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
