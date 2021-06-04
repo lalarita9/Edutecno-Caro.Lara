@@ -1,0 +1,41 @@
+/*abstracts variables*/
+/*abstracts mixins*/
+/*base reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*base typography*/
+/*layout main-section*/
+.main .main__img__principal .img__banner {
+  width: 100%;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+}
+.main .main__perfil {
+  width: 100%;
+  display: flex;
+  padding: 15px 10px;
+  height: 100px;
+}
+.main .main__perfil .img-perfil {
+  width: 75px;
+  height: 75px;
+}
+.main .main__perfil .perfil__datos {
+  margin-left: 3%;
+}
+.main .main__perfil .perfil__control {
+  margin-left: 67%;
+  margin-top: 2%;
+}
+.main .card {
+  border: none;
+}
+
+/*layout grid*/
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,44 @@
+/*vendors jquery-ui*/
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 600px;
+        height: auto;
+    }
+    .header {
+        width: 100%;
+        .header__navbar {
+            width: 100%;
+        }
+        .boton_menu {
+            display: block;
+            cursor: pointer;
+        }
+        .navbar__items {
+            text-align: center;
+            width: 100%;
+            margin-left: 0;
+            display: none;
+        }
+        .items__link {
+            display: block;
+            border-bottom: 1px solid $quiksilver;
+            margin: 0;
+        }
+        #toggle:checked+.navbar__items {
+            display: block;
+        }
+    }
+    .main__grid__container {
+        width: 100%;
+        .main__grid__item4 img {
+            width: 100%;
+            display: block;
+            height: 200px;
+        }
+        .main__grid__item1 {
+            width: 100%;
+            grid-column: 1/-1;
+        }
+    }
+}

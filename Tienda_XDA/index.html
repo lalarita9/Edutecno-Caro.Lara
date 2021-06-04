@@ -8,13 +8,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
-    <link href="/assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
 <body>
+    <header class="header">
+        <nav class="header__navbar">
+            <div>
+                <a class="navbar__logo">XDA</a>
+            </div>
+            <ul class="navbar__items">
+                <li class="items__1 active"><a class="items__link" href="#">Mujer</a></li>
+                <li class="items__1"><a class="items__link" href="#">Hombre</a></li>
+                <li class="items__1"><a class="items__link" href="#">Accesorio</a></li>
+                <li class="items__1"><a class="items__link" href="#">Blog</a></li>
+            </ul>
+            <div class="navbar__boton">
+                <label class="boton__menu" for="toggle">&#9776</label>
+                <input class="boton__checkbox" type="checkbox" id="toggle">
+            </div>
+        </nav>
+    </header>
     <main class="main">
         <section>
             <div class="main__grid__container">
+
                 <div class="main__grid__item1">
 
                     <h1 class="i__h1">Lorem ipsum dolor sit</h1>
@@ -30,7 +48,7 @@
                 <div class="main__grid__item3">
                     <p class="position__texto">Subcribir</p>
                 </div>
-                <div class="main__grid__item4"><img src="/assets/img/imagen1.png" alt="imagen1"></div>
+                <div class="main__grid__item4"><img src="assets/img/imagen1.png" alt="imagen1"></div>
 
             </div>
         </section>

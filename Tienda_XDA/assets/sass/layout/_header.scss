@@ -1,0 +1,39 @@
+/*layout header*/
+
+.header {
+    height: 75px;
+    width: 100vw;
+    .header__navbar {
+        display: flex;
+        justify-content: space-between;
+        line-height: 75px;
+        max-width: 992px;
+        .navbar__logo {
+            background-color: $smokyblack;
+            height: 100%;
+            width: 25%;
+        }
+        .navbar__items {
+            display: inline-flex;
+            list-style: none;
+            margin-left: 80%;
+        }
+        .items__1 {
+            border-radius: 3px;
+            margin: 0 5px;
+        }
+        .items__link {
+            text-decoration: none;
+            padding: 7px 13px;
+            display: block;
+        }
+        .boton__menu {
+            margin: 0 40px 0 0;
+            font-size: $size2;
+            display: none;
+        }
+        .boton__checkbox {
+            display: none;
+        }
+    }
+}
