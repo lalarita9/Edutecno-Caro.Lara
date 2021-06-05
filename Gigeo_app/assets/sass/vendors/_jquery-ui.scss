@@ -1,0 +1,56 @@
+/*vendors jquery*/
+
+@media screen and (max-width: 768px) {
+    .header__navbar {
+        .navbar__boton {
+        border: none;
+        color: black;
+        font-weight: bold;
+        font-size: $size2;
+    }
+    }
+    .main {
+               width:100%;
+        .main__img__principal {
+            width: 100%;
+            .img__banner {
+                width: 100%;
+                height: 65px;
+                display: block;
+                object-fit: cover;
+            }
+        }
+        .main__perfil {
+            width: 100%;
+            margin-left: 25px;
+.img-perfil  {
+    display: block;
+                
+                width: 100%;
+               
+                 width: 70px;
+            height: 70px;
+}
+.perfil__datos {
+                display: block;
+                padding: 5px;
+                width: 100%;
+                align-content: center;
+            }
+            .perfil__control {
+                display: none;
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+        .main__videos {
+            width: 100%;
+            display: block;
+            padding: 5px 0px;
+            align-content: center;
+            .videos__h3 {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+/*components buttons*/
+
+.header__navbar {
+    .navbar__boton {
+        border: none;
+        color: black;
+        font-weight: bold;
+        font-size: $size2;
+    }
+}
+
+.perfil__control {
+    .boton__blue {
+        border: none;
+        text-align: center;
+        padding: 8px;
+    }
+    .boton__rosa {
+        border: none;
+        text-align: center;
+        padding: 8px;
+    }
+}

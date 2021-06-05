@@ -15,18 +15,21 @@
         padding: 15px 10px;
         height: 100px;
         .img-perfil {
-            width: 75px;
-            height: 75px;
+            width: 85px;
+            height: 85px;
         }
         .perfil__datos {
             margin-left: 3%;
         }
         .perfil__control {
-            margin-left: 67%;
+            margin-left: 62%;
             margin-top: 2%;
         }
     }
     .card {
         border: none;
+    }
+    .card-body {
+        padding: 10px 0;
     }
 }

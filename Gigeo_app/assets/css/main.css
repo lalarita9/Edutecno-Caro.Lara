@@ -8,6 +8,60 @@
 }
 
 /*base typography*/
+.header .navbar__logo {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+.header .logo__superindice {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+.header .nav-link {
+  font-size: 18px;
+}
+.header .nav-boton {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+main .perfil__datos .datos__h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+main .perfil__datos .datos__p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+main .perfil__control .boton__blue,
+main .boton__rosa {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #FFF;
+}
+main .main__videos .videos__h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+main .main__videos .videos__card .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+main .main__videos .videos__card .card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+/*layout header*/
+.header .header__navbar .nav-link,
+.header .header__navbar .nav-boton {
+  color: black;
+}
+
 /*layout main-section*/
 .main .main__img__principal .img__banner {
   width: 100%;
@@ -22,20 +76,94 @@
   height: 100px;
 }
 .main .main__perfil .img-perfil {
-  width: 75px;
-  height: 75px;
+  width: 85px;
+  height: 85px;
 }
 .main .main__perfil .perfil__datos {
   margin-left: 3%;
 }
 .main .main__perfil .perfil__control {
-  margin-left: 67%;
+  margin-left: 62%;
   margin-top: 2%;
 }
 .main .card {
   border: none;
 }
+.main .card-body {
+  padding: 10px 0;
+}
 
 /*layout grid*/
+/*components buttons*/
+.header__navbar .navbar__boton {
+  border: none;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.perfil__control .boton__blue {
+  border: none;
+  text-align: center;
+  padding: 8px;
+}
+.perfil__control .boton__rosa {
+  border: none;
+  text-align: center;
+  padding: 8px;
+}
+
+/*vendors jquery*/
+@media screen and (max-width: 768px) {
+  .header__navbar .navbar__boton {
+    border: none;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .main {
+    width: 100%;
+  }
+  .main .main__img__principal {
+    width: 100%;
+  }
+  .main .main__img__principal .img__banner {
+    width: 100%;
+    height: 65px;
+    display: block;
+    object-fit: cover;
+  }
+  .main .main__perfil {
+    width: 100%;
+    margin-left: 25px;
+  }
+  .main .main__perfil .img-perfil {
+    display: block;
+    width: 100%;
+    width: 70px;
+    height: 70px;
+  }
+  .main .main__perfil .perfil__datos {
+    display: block;
+    padding: 5px;
+    width: 100%;
+    align-content: center;
+  }
+  .main .main__perfil .perfil__control {
+    display: none;
+    margin-left: 0;
+    width: 100%;
+  }
+  .main .main__videos {
+    width: 100%;
+    display: block;
+    padding: 5px 0px;
+    align-content: center;
+  }
+  .main .main__videos .videos__h3 {
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

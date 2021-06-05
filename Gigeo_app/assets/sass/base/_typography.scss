@@ -1,1 +1,59 @@
 /*base typography*/
+
+.header {
+    .navbar__logo {
+        font-family: 'Jost', sans-serif;
+        font-weight: 700;
+        font-size: $size1;
+    }
+    .logo__superindice {
+        font-family: 'Jost', sans-serif;
+        font-size: $size5;
+        font-weight: normal;
+    }
+    .nav-link {
+        font-size: $size4;
+    }
+    .nav-boton {
+        font-size: $size4;
+        font-weight: 700;
+    }
+}
+
+main {
+    .perfil__datos {
+        .datos__h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: $size3;
+            font-weight: bold;
+        }
+        .datos__p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: $size6;
+        }
+    }
+    .perfil__control .boton__blue,
+    .boton__rosa {
+        font-family: 'Montserrat', sans-serif;
+        font-size: $size5;
+        color: $white;
+    }
+    .main__videos {
+        .videos__h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: $size2;
+            font-weight: 400;
+        }
+        .videos__card {
+            .card-title {
+                font-family: 'Montserrat', sans-serif;
+                font-size: $size4;
+                font-weight: bold;
+            }
+            .card-text {
+                font-family: 'Open Sans', sans-serif;
+                font-size: $size4;
+            }
+        }
+    }
+}
