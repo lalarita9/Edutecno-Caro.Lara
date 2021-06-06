@@ -2,7 +2,7 @@
 
 .header__navbar {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,7 +21,7 @@
         }
         .menu__link {
             text-decoration: none;
-            padding: 10px;
+            padding: 5px;
             flex-grow: 1;
         }
     }
