@@ -8,6 +8,51 @@
 }
 
 /*base typography*/
+.header .navbar__menu .menu__link {
+  font-family: "Ubuntu", san-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFF;
+}
+
+.main .grid__elementos .elemento1__h2,
+.main .grid__elementos .elemento2__h2 {
+  font-family: "Ubuntu", san-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  padding: 10px 0;
+  text-align: left;
+}
+.main .grid__elementos .elemento1__p,
+.main .grid__elementos .elemento2__p {
+  font-family: "Ubuntu", san-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  padding: 10px 0;
+  text-align: justify;
+}
+.main .grid__elementos .elemento1__p2,
+.main .grid__elementos .elemento2__p2 {
+  font-family: "Ubuntu", san-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+  padding: 10px 0;
+  text-align: justify;
+}
+.main .grid__elementos .elemento1__icons__p,
+.main .grid__elementos .elemento2_icons__p {
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  padding: 10px 0;
+  text-align: left;
+  margin: 0 10px;
+  margin-left: 0;
+}
+
 /*layout header*/
 .header {
   width: 100%;
@@ -97,9 +142,9 @@
   list-style: none;
 }
 .header__navbar .navbar__menu .menu__link {
-  text-decoration: none;
-  padding: 5px;
+  margin: 0 10px;
   flex-grow: 1;
+  text-decoration: none;
 }
 .header__navbar .menu__boton {
   display: none;

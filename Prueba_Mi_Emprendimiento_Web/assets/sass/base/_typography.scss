@@ -1,1 +1,54 @@
 /*base typography*/
+
+.header {
+    .navbar__menu {
+        .menu__link {
+            font-family: 'Ubuntu', san-serif;
+            font-weight: 700;
+            font-size: $size7;
+            color: $white;
+        }
+    }
+}
+
+.main {
+    .grid__elementos {
+        .elemento1__h2,
+        .elemento2__h2 {
+            font-family: 'Ubuntu', san-serif;
+            font-weight: 700;
+            font-size: $size6;
+            color: $black;
+            padding: 10px 0;
+            text-align: left;
+        }
+        .elemento1__p,
+        .elemento2__p {
+            font-family: 'Ubuntu', san-serif;
+            font-weight: 400;
+            font-size: $size8;
+            color: $black;
+            padding: 10px 0;
+            text-align: justify;
+        }
+        .elemento1__p2,
+        .elemento2__p2 {
+            font-family: 'Ubuntu', san-serif;
+            font-weight: 700;
+            font-size: $size7;
+            color: $black;
+            padding: 10px 0;
+            text-align: justify;
+        }
+        .elemento1__icons__p,
+        .elemento2_icons__p {
+            font-weight: 700;
+            font-size: $size8;
+            color: $black;
+            padding: 10px 0;
+            text-align: left;
+            margin: 0 10px;
+            margin-left: 0;
+        }
+    }
+}
