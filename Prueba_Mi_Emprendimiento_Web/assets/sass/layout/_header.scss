@@ -1,0 +1,13 @@
+/*layout header*/
+
+.header {
+    width: 100%;
+    height: 75px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $black;
+}

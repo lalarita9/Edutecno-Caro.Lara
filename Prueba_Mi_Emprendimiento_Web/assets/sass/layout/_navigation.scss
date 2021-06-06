@@ -1,0 +1,31 @@
+/* layout navigation */
+
+.header__navbar {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .navbar__logo {
+        width: 40px;
+    }
+    .navbar__menu {
+        width: 25%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        .menu__items {
+            list-style: none;
+        }
+        .menu__link {
+            text-decoration: none;
+            padding: 10px;
+            flex-grow: 1;
+        }
+    }
+    .menu__boton {
+        display: none;
+    }
+}

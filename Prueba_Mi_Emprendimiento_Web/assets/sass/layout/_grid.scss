@@ -1,0 +1,28 @@
+    /*layout grid*/
+    
+    .main__container {
+        .container__grid {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 2fr 2fr;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .grid__elementos {
+                flex: 1 1 50%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: flex-start;
+                border: 1px solid $sable;
+            }
+            .grid__aside {
+                flex: 1 1 50%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid $sable;
+            }
+        }
+    }

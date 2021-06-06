@@ -1,0 +1,23 @@
+/*layout main-section*/
+
+.main {
+    .main__imagen__banner .imagen__banner {
+        width: 100%;
+        height: auto;
+    }
+    .main__container {
+        .imagen__html {
+            width: 100%;
+            height: auto;
+        }
+        .imagen__sass {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .imagen__web {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    }
+}
