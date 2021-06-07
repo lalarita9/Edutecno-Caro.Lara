@@ -43,6 +43,9 @@
         .texto__p {
             @include font ('Ubuntu' san-serif, 400, $size8, $black, 10px 0, justify);
         }
+        .mascursos__boton {
+            @include font ('Ubuntu' san-serif, 700, $size8, $white, 10px 0, center);
+        }
         .mascursos__link {
             @include font ('Ubuntu' san-serif, 400, $size8, none, 10px 0, justify);
         }

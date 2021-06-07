@@ -21,13 +21,15 @@
             .grid__aside {
                 @include grilla (1 1 50%, flex, 20px, 10px, wrap, column, center, 1px solid $sable);
                 .aside__nosotros__imagen {
-                    @include margen (15px, 5px);
+                    @include margen (12px, 5px);
+                    margin-bottom: 0;
                 }
                 .aside__mascursos {
-                    @include margen (15px, 5px);
+                    @include margen (0 12px, 0px);
                 }
                 .aside__gif {
-                    @include margen (10px, 5px);
+                    @include margen (12px, 5px);
+                    margin-left: 25%;
                 }
             }
         }

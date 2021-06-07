@@ -2,34 +2,34 @@
 
 .footer {
     .footer__varios {
-        width: 100%;
-        height: 100px;
-        padding: 10px;
+        height: 75px;
+        width: 100vw;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
         background-color: $black;
         .footer__texto {
-            width: 30%;
+            margin-left: 15%;
         }
         .footer__legales__items {
-            width: 70%;
+            padding: 20px;
             display: flex;
-            flex-wrap: wrap;
-            align-items: center;
+            .footer__boton {
+                display: block;
+                .boton__enviar {
+                    display: block;
+                    padding: 20px;
+                }
+            }
             .footer__items {
                 list-style: none;
+                margin: 0 5px
             }
             .footer__links {
-                margin: 0 10px;
-                flex-grow: 1;
+                margin: 0 5px;
                 text-decoration: none;
             }
-        }
-        .footer__boton {
-            display: flex;
         }
     }
 }

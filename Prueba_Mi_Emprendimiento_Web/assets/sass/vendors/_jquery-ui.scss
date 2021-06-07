@@ -1,0 +1,69 @@
+    /*vendors jquery-ui*/
+    
+    @media only screen and (max-width: 768px) {
+        body {
+            width: 600px;
+            height: auto;
+        }
+        .header {
+            width: 100%;
+            .header__navbar {
+                width: 100%;
+            }
+            .menu__boton {
+                display: block;
+                padding: 5px;
+                cursor: pointer;
+                color: $white;
+            }
+            .menu__boton:hover {
+                color: $tangerine;
+            }
+            .menu__items {
+                text-align: center;
+                width: 100%;
+                margin-left: 0;
+                display: none;
+            }
+            .menu__link {
+                display: block;
+                border-bottom: 1px solid $black;
+                margin: 0;
+            }
+        }
+        .main {
+            .container__grid {
+                width: 100%;
+                display: block;
+                .grid__elementos {
+                    flex: 0;
+                    width: 100%;
+                }
+            }
+        }
+        .footer {
+            width: 100%;
+            padding: 2px;
+            .footer__varios {
+                width: 100%;
+                padding: 2px;
+                text-align: center;
+                .footer__texto {
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                }
+                .footer__legales__items {
+                    width: 100%s;
+                    padding: 0;
+                    margin: 0;
+                }
+                .footer__boton {
+                    width: 100%;
+                    padding: 2px;
+                    margin: 0;
+                }
+            }
+        }
+    }

@@ -1,0 +1,32 @@
+/*components buttons*/
+
+.main {
+    .grid__aside {
+        .mascursos__boton {
+            width: 100%;
+            height: 30px;
+            border: none;
+            background-color: $charcoal;
+        }
+    }
+}
+
+.footer {
+    .footer__boton {
+        .input__placeholder {
+            width: 150px;
+            height: 20px;
+        }
+        .input__placeholder:focus {
+            background-color: $tangerine;
+        }
+        .boton__enviar {
+            background-color: $tangerine;
+            border-color: $white;
+            border-radius: none;
+        }
+        .boton__enviar:hover {
+            background-color: $white;
+        }
+    }
+}
