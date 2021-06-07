@@ -10,45 +10,24 @@
             flex-direction: row;
             flex-wrap: wrap;
             .grid__elementos {
-                flex: 1 1 50%;
-                display: flex;
-                padding: 20px;
-                margin-top: 10px;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: flex-start;
-                border: 1px solid $sable;
+                @include grilla (1 1 50%, flex, 20px, 10px, wrap, column, flex-start, 1px solid $sable);
                 .elemento__1 {
-                    padding: 10px;
-                    margin-top: 5px;
-                    border: 1px dotted rgb(196, 192, 192);
+                    @include elemento (10px, 5px, 1px dotted rgb(196, 192, 192));
                 }
                 .elemento__2 {
-                    padding: 10px;
-                    margin-top: 5px;
-                    border: 1px dotted rgb(196, 192, 192);
+                    @include elemento (10px, 5px, 1px dotted rgb(196, 192, 192));
                 }
             }
             .grid__aside {
-                flex: 1 1 50%;
-                display: flex;
-                padding: 20px;
-                margin-top: 10px;
-                flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-                border: 1px solid $sable;
+                @include grilla (1 1 50%, flex, 20px, 10px, wrap, column, center, 1px solid $sable);
                 .aside__nosotros__imagen {
-                    padding: 8px;
-                    margin-top: 5px;
+                    @include margen (15px, 5px);
                 }
                 .aside__mascursos {
-                    padding: 8px;
-                    margin-top: 5px;
+                    @include margen (15px, 5px);
                 }
                 .aside__gif {
-                    padding: 5px;
-                    margin-top: 5px;
+                    @include margen (10px, 5px);
                 }
             }
         }

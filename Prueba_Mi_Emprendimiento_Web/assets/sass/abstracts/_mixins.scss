@@ -1,1 +1,32 @@
 /*abstracts mixins*/
+
+@mixin grilla($fx, $dp, $pd, $mt, $fw, $fd, $jc, $lateral) {
+    flex: $fx;
+    display: $dp;
+    padding: $pd;
+    margin-top: $mt;
+    flex-wrap: $fw;
+    flex-direction: $fd;
+    justify-content: $jc;
+    border: $lateral;
+}
+
+@mixin elemento($pd, $mt, $lateral) {
+    padding: $pd;
+    margin-top: $mt;
+    border: $lateral;
+}
+
+@mixin margen($pd, $mt) {
+    padding: $pd;
+    margin-top: $mt;
+}
+
+@mixin font($fuente, $ancho, $tamano, $color, $pd, $talgn) {
+    font-family: $fuente;
+    font-weight: $ancho;
+    font-size: $tamano;
+    color: $color;
+    padding: $pd;
+    text-align: $talgn;
+}

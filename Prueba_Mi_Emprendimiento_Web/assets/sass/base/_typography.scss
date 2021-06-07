@@ -15,30 +15,15 @@
     .grid__elementos {
         .elemento1__h2,
         .elemento2__h2 {
-            font-family: 'Ubuntu', san-serif;
-            font-weight: 700;
-            font-size: $size6;
-            color: $black;
-            padding: 10px 0;
-            text-align: left;
+            @include font ('Ubuntu' san-serif, 700, $size6, $black, 10px 0, left);
         }
         .elemento1__p,
         .elemento2__p {
-            font-family: 'Ubuntu', san-serif;
-            font-weight: 400;
-            font-size: $size8;
-            color: $black;
-            padding: 10px 0;
-            text-align: justify;
+            @include font ('Ubuntu' san-serif, 400, $size8, $black, 10px 0, justify);
         }
         .elemento1__p2,
         .elemento2__p2 {
-            font-family: 'Ubuntu', san-serif;
-            font-weight: 700;
-            font-size: $size7;
-            color: $black;
-            padding: 10px 0;
-            text-align: justify;
+            @include font ('Ubuntu' san-serif, 700, $size7, $black, 10px 0, left);
         }
         .elemento1__icons__p,
         .elemento2_icons__p {
@@ -50,5 +35,35 @@
             margin: 0 10px;
             margin-left: 0;
         }
+    }
+    .grid__aside {
+        .nosotros__p {
+            @include font ('Ubuntu' san-serif, 700, $size6, $black, 10px 0, center);
+        }
+        .texto__p {
+            @include font ('Ubuntu' san-serif, 400, $size8, $black, 10px 0, justify);
+        }
+        .mascursos__link {
+            @include font ('Ubuntu' san-serif, 400, $size8, none, 10px 0, justify);
+        }
+        .nosotros__icons {
+            font-weight: 700;
+            font-size: $size6;
+            color: $black;
+            padding: 5px 0;
+            text-align: center;
+            .nosotros__icon {
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+.footer {
+    .footer__texto {
+        @include font ('Poppins' san-serif, 400, $size8, $white, 20px, left);
+    }
+    .footer__links {
+        @include font ('Poppins' san-serif, 400, $size8, $white, 20px, left);
     }
 }

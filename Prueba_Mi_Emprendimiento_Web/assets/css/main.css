@@ -17,7 +17,7 @@
 
 .main .grid__elementos .elemento1__h2,
 .main .grid__elementos .elemento2__h2 {
-  font-family: "Ubuntu", san-serif;
+  font-family: "Ubuntu" san-serif;
   font-weight: 700;
   font-size: 20px;
   color: #000;
@@ -26,7 +26,7 @@
 }
 .main .grid__elementos .elemento1__p,
 .main .grid__elementos .elemento2__p {
-  font-family: "Ubuntu", san-serif;
+  font-family: "Ubuntu" san-serif;
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -35,12 +35,12 @@
 }
 .main .grid__elementos .elemento1__p2,
 .main .grid__elementos .elemento2__p2 {
-  font-family: "Ubuntu", san-serif;
+  font-family: "Ubuntu" san-serif;
   font-weight: 700;
   font-size: 16px;
   color: #000;
   padding: 10px 0;
-  text-align: justify;
+  text-align: left;
 }
 .main .grid__elementos .elemento1__icons__p,
 .main .grid__elementos .elemento2_icons__p {
@@ -51,6 +51,57 @@
   text-align: left;
   margin: 0 10px;
   margin-left: 0;
+}
+.main .grid__aside .nosotros__p {
+  font-family: "Ubuntu" san-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  padding: 10px 0;
+  text-align: center;
+}
+.main .grid__aside .texto__p {
+  font-family: "Ubuntu" san-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  padding: 10px 0;
+  text-align: justify;
+}
+.main .grid__aside .mascursos__link {
+  font-family: "Ubuntu" san-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: none;
+  padding: 10px 0;
+  text-align: justify;
+}
+.main .grid__aside .nosotros__icons {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  padding: 5px 0;
+  text-align: center;
+}
+.main .grid__aside .nosotros__icons .nosotros__icon {
+  margin: 0 5px;
+}
+
+.footer .footer__texto {
+  font-family: "Poppins" san-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFF;
+  padding: 20px;
+  text-align: left;
+}
+.footer .footer__links {
+  font-family: "Poppins" san-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFF;
+  padding: 20px;
+  text-align: left;
 }
 
 /*layout header*/
@@ -107,15 +158,15 @@
   border: 1px solid #060606;
 }
 .main__container .container__grid .grid__aside .aside__nosotros__imagen {
-  padding: 8px;
+  padding: 15px;
   margin-top: 5px;
 }
 .main__container .container__grid .grid__aside .aside__mascursos {
-  padding: 8px;
+  padding: 15px;
   margin-top: 5px;
 }
 .main__container .container__grid .grid__aside .aside__gif {
-  padding: 5px;
+  padding: 10px;
   margin-top: 5px;
 }
 
@@ -167,12 +218,23 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  margin-left: 42%;
+}
+.main .mascursos__menu {
+  padding: 10px 0;
+  margin-left: 3%;
+}
+.main .mascursos__menu .mascursos__items {
+  list-style: circle;
+}
+.main .mascursos__menu .mascursos__link {
+  text-decoration: none;
 }
 
 /*layout footer*/
-.footer {
+.footer .footer__varios {
   width: 100%;
-  height: 75px;
+  height: 100px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -181,22 +243,25 @@
   flex-wrap: wrap;
   background-color: #000;
 }
-.footer .footer__texto {
-  width: 40%;
+.footer .footer__varios .footer__texto {
+  width: 30%;
 }
-.footer .footer__legales__items {
-  width: 60%;
+.footer .footer__varios .footer__legales__items {
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.footer .footer__legales__items .footer__items {
+.footer .footer__varios .footer__legales__items .footer__items {
   list-style: none;
 }
-.footer .footer__legales__items .footer__links {
-  text-decoration: none;
-  padding: 5px;
+.footer .footer__varios .footer__legales__items .footer__links {
+  margin: 0 10px;
   flex-grow: 1;
+  text-decoration: none;
+}
+.footer .footer__varios .footer__boton {
+  display: flex;
 }
 
 /*layout grid*/
@@ -240,15 +305,15 @@
   border: 1px solid #060606;
 }
 .main__container .container__grid .grid__aside .aside__nosotros__imagen {
-  padding: 8px;
+  padding: 15px;
   margin-top: 5px;
 }
 .main__container .container__grid .grid__aside .aside__mascursos {
-  padding: 8px;
+  padding: 15px;
   margin-top: 5px;
 }
 .main__container .container__grid .grid__aside .aside__gif {
-  padding: 5px;
+  padding: 10px;
   margin-top: 5px;
 }
 

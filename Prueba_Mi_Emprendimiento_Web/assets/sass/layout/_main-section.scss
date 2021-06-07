@@ -19,5 +19,16 @@
         border-radius: 50%;
         width: 100px;
         height: 100px;
+        margin-left: 42%;
+    }
+    .mascursos__menu {
+        padding: 10px 0;
+        margin-left: 3%;
+        .mascursos__items {
+            list-style: circle;
+        }
+        .mascursos__link {
+            text-decoration: none;
+        }
     }
 }
