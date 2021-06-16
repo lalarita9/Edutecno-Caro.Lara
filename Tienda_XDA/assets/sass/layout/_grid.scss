@@ -1,29 +1,36 @@
 /*layout grid*/
 
-.main__grid__container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 2fr 2fr 2fr 1fr 3fr;
-    .main__grid__item1 {
-        grid-column: 1 / span 4;
-        grid-row: 1;
-        align-items: center;
-        justify-content: center;
-        padding-left: 15%;
-        padding-top: 10%;
-        padding-right: 15%;
-        padding-bottom: 0;
-    }
-    .main__grid__item4 {
-        grid-column: 5;
-        grid-row: 1 / span 2;
-    }
-    .main__grid__item2 {
-        grid-column: 1 / span 3;
-        background-color: $smokyblack;
-    }
-    .main__grid__item3 {
-        align-self: center;
-        grid-column-end: 5;
+.main {
+    .main__grid {
+        .grid__elementos {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            .elemento__4 {
+                grid-column: 5;
+                grid-row: 1 / span 2;
+            }
+            .elemento__1 {
+                grid-column: 1 / span 4;
+                grid-row: 1;
+                align-items: center;
+                justify-content: center;
+                padding-left: 15%;
+                padding-top: 10%;
+                padding-right: 15%;
+                padding-bottom: 0;
+            }
+            .elemento__2 {
+                grid-column: 1 / span 4;
+                grid-row: 2;
+                margin-right: 20px;
+                background-color: $smokyblack;
+            }
+            .elemento__3 {
+                grid-column: 4;
+                grid-row: 2;
+                margin-right: 5px;
+            }
+        }
     }
 }

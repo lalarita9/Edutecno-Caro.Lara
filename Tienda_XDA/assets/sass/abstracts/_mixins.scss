@@ -1,18 +1,1 @@
 /*abstracts mixins*/
-
-@mixin font ($fuente, $color, $tamano, $ancho, $cambio) {
-    font-family: $fuente;
-    color: $color;
-    font-size: $tamano;
-    font-weight: $ancho;
-    text-transform: $cambio;
-}
-
-@mixin contenedor ($ancho, $alto, $ml, $mt, $exterior, $mb) {
-    width: $ancho;
-    height: $alto;
-    margin-top: $mt;
-    margin-left: $ml;
-    padding: $exterior;
-    margin-bottom: $mb;
-}

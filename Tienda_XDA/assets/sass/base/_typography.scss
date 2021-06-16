@@ -1,19 +1,60 @@
 /*base typography*/
 
-.main {
-    .i__h1 {
-        @include font (Old Standard TT, $smokyblack, $size1, bold, uppercase);
+.header {
+    .navbar__menu .menu__link {
+        font-family: 'Raleway';
+        font-size: $size6;
+        font-weight: 700;
+        color: $smokyblack
     }
-    .i__p {
-        @include font (Relaway, $graniteGray, $size5, normal, none);
+}
+
+main {
+    .elemento1__h1 {
+        font-family: 'Old Standard TT';
+        font-size: $size1;
+        font-weight: 700;
     }
-    .i__h4 {
-        @include font (Old Standard TT, $white, $size2, bold, none);
+    .elemento1__p {
+        font-family: 'Raleway';
+        font-size: $size7;
+        font-weight: 400;
+        color: $graniteGray;
+        margin-right: 35%;
+        line-height: 20px;
+        margin-bottom: 20px;
     }
-    .i__label {
-        @include font (Relaway, $white, $size6, normal, none);
+    .elemento1__btn {
+        font-family: 'Raleway';
+        font-size: $size6;
+        font-weight: 700;
     }
-    .position__texto {
-        @include font (Relaway, $smokyblack, $size5, bold, none);
+    .elemento2__h1 {
+        font-family: 'Old Standard TT';
+        font-size: $size2;
+        font-weight: 700;
+        color: $white;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        margin-left: 80px;
+    }
+    .elemento2__sp {
+        font-family: 'Old Standard TT';
+        font-size: $size6;
+        font-weight: 700;
+        color: $white;
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+    .elemento2__inp {
+        font-family: 'Raleway';
+        font-size: $size7;
+        font-weight: 400;
+        color: $graniteGray;
+    }
+    .elemento3__p {
+        font-family: 'Old Standard TT';
+        font-size: $size4;
+        font-weight: 700;
     }
 }

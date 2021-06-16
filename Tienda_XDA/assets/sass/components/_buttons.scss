@@ -1,0 +1,21 @@
+/* components buttons */
+
+.elemento1__btn {
+    border-radius: 0px;
+    background-color: $white;
+    border-top: 1px solid $smokyblack;
+    border-right: 1px solid $smokyblack;
+    border-left: 1px solid $quiksilver;
+    border-bottom: 1px solid $quiksilver;
+    padding: 10px 20px;
+}
+
+.elemento2__inp {
+    border-radius: 0px;
+    background-color: $white;
+    padding: 5px 10px;
+    width: 200px;
+    border: none;
+    margin-top: 10px;
+    margin-left: 80px;
+}
