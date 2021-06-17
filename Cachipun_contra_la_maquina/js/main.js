@@ -8,60 +8,47 @@ if (respuesta == "Si" || respuesta == "si" || respuesta == "SI") {
 
 
 var numero = prompt("cuántas veces quieres jugar");
-var piedra = "piedra";
-var papel = "papel";
-var tijera = "tijera";
 
-var empate = "0"
-var ganador = "1"
-var perdedor = "2"
-const b_piedra = document.getElementById("piedra");
-const b_papel = document.getElementById("papel");
-const b_tijera = document.getElementById("tijera");
-b_piedra.addEventListener('click', () => {
-    juega("piedra");
-})
-b_papel.addEventListener('click', () => {
-    juega("papel");
-})
-b_tijera.addEventListener('click', () => {
-    juega("tijera");
-})
 
-function juega(usuario) {
-    if (jugando) return;
-    jugando = true;
+function jugar(usuario) {
+    var maquina = maquina;
+    var opcion = ["piedra", "papel", "tijera"];
+    maquina = Math.floor(Math.random() * 3);
+    opcionUsuario = opcion[usuario];
+    opcionMaquina = opcion[maquina]
+    document.write(opcion[usuario]);
+    document.write(opcion[maquina]);
 
-    for (let numero = 0; numero <= numero; numero++) {
-        document.write(numero);
+    if (opcionUsuario === opcionMaquina) {
+        document.write("empate");
+    } else if (opcionUsuario === 0) {
+        if (opcionMaquina === 2);
+        document.write("ganador");
+    } else if (opcionUsuario === 1) {
+        if (opcionMaquina === 2);
+        document.write("perdedor");
+        if (opcionMaquina === 0)
+            document.write("ganador");
+    } else if (opcionUsuario === 2) {
+        if (opcionMaquina === 0);
+        document.write("perdedor");
     }
+    if (opcionMaquina === 1);
+    document.write("ganador");
 }
 
-function juega(usuario) {
 
-    var maquina = Math.floor(Math.random() * 3);
-    let resultado = juego(maquina, usuario);
-    if (usuario === maquina) {
-        return empate;
-    } else if (usuario === piedra) {
-        if (maquina === tijera) return ganador;
-    } else if (usuario === papel) {
-        if (maquina === tijera) return perdedor;
-        if (maquina === piedra) return ganador;
-    } else if (usuario === tijera) {
-        if (maquina === piedra) return perdedor;
-        if (maquina === papel) return ganador;
-    }
-    if (resultado === empate) {
-        document.write("es un empate");
-    }
-    if (resultado === ganador) {
+
+
+
+/*switch (resultado) {
+    case "empate":
+        document.write("empate");
+        break
+    case "ganador":
         document.write("ganaste");
-    }
-    if (resultado === perdedor) {
+        breack
+    case "perdedor":
         document.write("perdiste");
-    }
-
-
-
-}
+        breack
+}*/
