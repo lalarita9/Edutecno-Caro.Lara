@@ -1,3 +1,4 @@
+/* Consulta a usuario sí quiere jugar*/
 var respuesta = prompt("¿Quieres jugar Cachipún?: Si o No");
 
 if (respuesta == "Si" || respuesta == "si" || respuesta == "SI") {
@@ -6,41 +7,43 @@ if (respuesta == "Si" || respuesta == "si" || respuesta == "SI") {
     alert("¡¡sniff (╥﹏╥) sniff!!");
 }
 
-
+/*Consulta al usuario cuántas veces va a jugar*/
 var numero = prompt("cuántas veces quieres jugar");
 var numero = parseInt(numero);
-document.write("<br> <h1>Jugaras</h1>" + numero + "veces");
-for (var i = 0; i < numero; i++) {
+document.querySelector('#jugadas').innerHTML = numero;
+/*Repetición de jugadas según lo señala el usuario*/
+for (i = 0; i <= numero; i++) {
     function jugar(usuario) {
         var maquina = maquina;
         var opcion = ["piedra", "papel", "tijera"];
 
         maquina = Math.floor(Math.random() * 3);
         opcionUsuario = opcion[usuario];
-        opcionMaquina = opcion[maquina]
-        document.write("<h3>Elegiste</h3>" + opcion[usuario]);
-        document.write("<br> <h3>La máquina eligió</h3>" + opcion[maquina]);
+        opcionMaquina = opcion[maquina];
+        document.querySelector('#opcion-u').innerHTML = opcion[usuario];
+        document.querySelector('#opcion-m').innerHTML = opcion[maquina];
+        /*Resultados, según las opciones de los jugadores*/
 
         if (opcionUsuario === opcionMaquina) {
-            document.write("<br> <h1>(ɔ◔‿◔)ɔ ♥EMPATARON♥(^◡^ )</h1>");
+            document.querySelector('#resultado').innerHTML = "(ɔ◔‿◔)ɔ ♥EMPATARON♥(^◡^ )";
         }
         if (opcionUsuario === "piedra" && opcionMaquina === "papel") {
-            document.write("<br> <h1>¡PERDISTE! ☜(ˆ▽ˆ)</h1>");
+            document.querySelector('#resultado').innerHTML = "¡PERDISTE! ☜(ˆ▽ˆ)";
         }
         if (opcionUsuario === "piedra" && opcionMaquina === "tijera") {
-            document.write("<br> <h1>¡GANASTE! (>‿◠)✌</h1>");
+            document.querySelector('#resultado').innerHTML = "¡GANASTE! (>‿◠)✌";
         }
         if (opcionUsuario === "papel" && opcionMaquina === "tijera") {
-            document.write("<br> <h1>¡PERDISTE! ☜(ˆ▽ˆ)</h1>");
+            document.querySelector('#resultado').innerHTML = "¡PERDISTE! ☜(ˆ▽ˆ)";
         }
         if (opcionUsuario === "papel" && opcionMaquina === "piedra") {
-            document.write("<br> <h1>¡GANASTE! (>‿◠)✌</h1>");
+            document.querySelector('#resultado').innerHTML = "¡GANASTE! (>‿◠)✌";
         }
         if (opcionUsuario === "tijera" && opcionMaquina === "piedra") {
-            document.write("<br> <h1>¡PERDISTE! ☜(ˆ▽ˆ)</h1>");
+            document.querySelector('#resultado').innerHTML = "¡PERDISTE! ☜(ˆ▽ˆ)";
         }
         if (opcionUsuario === "tijera" && opcionMaquina === "papel") {
-            document.write("<br> <h1>¡GANASTE! (>‿◠)✌</h1>");
+            document.querySelector('#resultado').innerHTML = "¡GANASTE! (>‿◠)✌";
         }
 
     }

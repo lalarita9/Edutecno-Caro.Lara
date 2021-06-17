@@ -2,6 +2,24 @@
         background-color: beige;
     }
     
+    #jugadas {
+        font-weight: bold;
+        color: #037367;
+        font-size: 25px;
+    }
+    
+    #opcion-u {
+        font-weight: bold;
+        color: #08708A;
+        font-size: 25px;
+    }
+    
+    #opcion-m {
+        font-weight: bold;
+        color: #3c455c;
+        font-size: 25px;
+    }
+    
     button {
         background-color: #FEB47B;
         border: 1px solid white;

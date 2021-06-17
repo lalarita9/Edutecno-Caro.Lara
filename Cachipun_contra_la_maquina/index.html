@@ -14,23 +14,37 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <button onclick="jugar(0)"><i class="boton fas fa-hand-rock fa-4x" ></i></button>
-                <p>PIEDRA</p>
-            </div>
-            <div class="col-4">
-                <button onclick="jugar(1)"><i class="boton fas fa-hand-paper fa-4x" ></i></button>
-                <P>PAPEL</P>
-            </div>
-            <div class="col-4">
-                <button onclick="jugar(2)"><i class="boton fas fa-hand-scissors fa-4x" ></i></button>
-                <p>TIJERA</p>
-            </div>
+        <div>
+            <h3>Tu número de jugadas elegidas son:</h3>
+            <p id="jugadas"></p>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <button onclick="jugar(0)"><i class="boton fas fa-hand-rock fa-4x" ></i></button>
+                    <p>PIEDRA</p>
+                </div>
+                <div class="col-4">
+                    <button onclick="jugar(1)"><i class="boton fas fa-hand-paper fa-4x" ></i></button>
+                    <P>PAPEL</P>
+                </div>
+                <div class="col-4">
+                    <button onclick="jugar(2)"><i class="boton fas fa-hand-scissors fa-4x" ></i></button>
+                    <p>TIJERA</p>
+                </div>
+            </div>
 
+        </div>
+        <div>
+            <h2>Elegiste</h2>
+            <p id="opcion-u"></p>
+            <h2>La máquina eligió</h2>
+            <p id="opcion-m"></p>
+        </div>
+        <div>
+            <h2 id="resultado"></h2>
+        </div>
     </div>
-
 </body>
 <script src="js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
