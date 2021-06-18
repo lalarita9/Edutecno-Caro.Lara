@@ -2,7 +2,7 @@
 var respuesta = prompt("¿Quieres jugar Cachipún?: Si o No");
 
 if (respuesta == "Si" || respuesta == "si" || respuesta == "SI") {
-    var numero = parseInt(prompt("Cuantas veces quieres jugar"));
+    var numero = parseInt(prompt("Cuántas veces quieres jugar"));
 
 } else {
     alert("¡¡sniff (╥﹏╥) sniff!!");
