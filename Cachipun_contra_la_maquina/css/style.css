@@ -20,6 +20,12 @@
         font-size: 25px;
     }
     
+    #fin {
+        font-weight: bold;
+        color: red;
+        font-size: 25px;
+    }
+    
     button {
         background-color: #FEB47B;
         border: 1px solid white;

@@ -2,17 +2,17 @@
 var respuesta = prompt("¿Quieres jugar Cachipún?: Si o No");
 
 if (respuesta == "Si" || respuesta == "si" || respuesta == "SI") {
+    var numero = parseInt(prompt("Cuantas veces quieres jugar"));
 
 } else {
     alert("¡¡sniff (╥﹏╥) sniff!!");
 }
 
 /*Consulta al usuario cuántas veces va a jugar*/
-var numero = prompt("cuántas veces quieres jugar");
-var numero = parseInt(numero);
+
 document.querySelector('#jugadas').innerHTML = numero;
 /*Repetición de jugadas según lo señala el usuario*/
-for (i = 0; i <= numero; i++) {
+for (var i = 0; i < numero; i++) {
     function jugar(usuario) {
         var maquina = maquina;
         var opcion = ["piedra", "papel", "tijera"];
@@ -46,5 +46,8 @@ for (i = 0; i <= numero; i++) {
             document.querySelector('#resultado').innerHTML = "¡GANASTE! (>‿◠)✌";
         }
 
+    }
+    if (i == numero) {
+        document.querySelector('#fin').innerHTML = "(ﾟ∀ﾟ)☞ ¡fin de tus jugadas!";
     }
 }
