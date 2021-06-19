@@ -6,6 +6,7 @@ if (respuesta == "Si" || respuesta == "si" || respuesta == "SI") {
     var numero = parseInt(prompt("Cuántas veces quieres jugar"));
 } else {
     alert("¡¡sniff (╥﹏╥) sniff!!");
+
 }
 document.querySelector('#jugadas').innerHTML = numero;
 var contador = 0;
@@ -46,13 +47,11 @@ function jugar(usuario) {
         document.querySelector('#resultado').innerHTML = "¡GANASTE! (>‿◠)✌";
     }
     document.getElementById("jugadas").innerHTML = ++contador;
-    if (contador == numero) {
-        document.querySelector('#fin').innerHTML = "(ﾟ∀ﾟ)☞ ¡fin de tus jugadas!";
-        if (contador >= numero) {
-            document.getElementById('boton').disabled = true;
-            document.getElementById('boton1').disabled = true;
-            document.getElementById('boton2').disabled = true;
-        }
-    }
 
+    if (contador >= numero) {
+        document.querySelector('#fin').innerHTML = "(ﾟ∀ﾟ)☞ ¡fin de tus jugadas!";
+        document.getElementById('boton').disabled = true;
+        document.getElementById('boton1').disabled = true;
+        document.getElementById('boton2').disabled = true;
+    }
 }
