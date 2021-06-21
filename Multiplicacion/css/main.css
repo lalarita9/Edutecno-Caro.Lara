@@ -1,0 +1,157 @@
+body {
+    width: 500px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #fad5a6;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 2px solid #323329;
+}
+
+.pantalla {
+    border-top: 5px solid #9b9b9a;
+    border-left: 5px solid #9b9b9a;
+    border-bottom: none;
+    border-right: none;
+    grid-column: 1 / span 5;
+    height: 200px;
+    width: 100%;
+    background-color: #e2d9d3;
+    justify-content: center;
+}
+
+p {
+    font-family: 'Century Gothic';
+    color: #1c1c1c;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.solar {
+    grid-column: 1/ span 5;
+    display: flex;
+    margin-right: 0;
+    margin-left: 70%;
+    width: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.item__1,
+.item__2,
+.item__3,
+.item__4,
+.item__5 {
+    border: 1px solid #dde2e3;
+    background-color: #866768;
+    width: 30px;
+    height: 20px;
+}
+
+.numeros__0 {
+    grid-column: 1/ span 5;
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.numeros__1 {
+    grid-column: 1/ span 5;
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.numeros__2 {
+    grid-column: 1/ span 5;
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.numeros__3 {
+    grid-column: 1/ span 5;
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.numeros__4 {
+    grid-column: 1/ span 5;
+    display: flex;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.items {
+    grid-row: 3;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.num {
+    background-color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    color: #032f2b;
+}
+
+.operacion {
+    background-color: #4bbcf4;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    font-weight: 400;
+    color: #032f2b;
+}
+
+.por {
+    background-color: #4bbcf4;
+    font-family: 'Pacifico', cursive;
+    color: #032f2b;
+}
+
+.signo {
+    background-color: #ff7e5f;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    color: #032f2b;
+}
+
+.cero {
+    background-color: white;
+    line-height: 120px;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    color: #032f2b;
+}
+
+.pantalla #error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.pantalla #rango {
+    text-align: center;
+}
+
+.animate__animated.animate__pulse {
+    --animate-duration: 3s;
+    --animate-repeat: 2;
+}
