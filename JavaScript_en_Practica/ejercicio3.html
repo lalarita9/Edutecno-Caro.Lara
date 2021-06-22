@@ -35,6 +35,29 @@
         </div>
     </div>
     <script>
+        var botonSuma = document.getElementById('btn-sumar');
+        botonSuma.addEventListener("click", sumar);
+
+        function sumar() {
+            var num1 = document.getElementById("valor1").value;
+            var num2 = document.getElementById("valor2").value;
+            var suma = parseInt(num1) + parseInt(num2);
+            alert("La suma de los numeros ingresados es: " + suma);
+        }
+        var botonResta = document.getElementById('btn-restar');
+        botonResta.addEventListener("click", restar);
+
+        function restar() {
+            var num1 = document.getElementById("valor1").value;
+            var num2 = document.getElementById("valor2").value;
+            var resta = parseInt(num1) - parseInt(num2);
+            if (resta > 0) {
+                alert("La resta de los numeros ingresados es: " + resta);
+            } else {
+                alert("La resta de los numeros ingresados es: 0 ");
+            }
+
+        }
     </script>
 </body>
 
