@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h2>
+                Paleta de colores
+            </h2>
+            <div style="display: flex;">
+                <div style="display: flex;flex-direction: column;">
+                    <button id="btn-1" style="background-color: #e53e3e; width:100px;height: 100px" type="button">
+                </button>
+                    <button id="btn-2" style="background-color: #dd6b20; width:100px;height: 100px" type="button">
+                </button>
+                    <button id="btn-3" style="background-color: #faf089; width:100px;height: 100px" type="button">
+                </button>
+                    <button id="btn-4" style="background-color: #48bb78; width:100px;height: 100px" type="button">
+                </button>
+                    <button id="btn-5" style="background-color: #81e6d9; width:100px;height: 100px" type="button">
+                </button>
+                    <button id="btn-6" style="background-color: #d53f8c; width:100px;height: 100px" type="button">
+                </button>
+                </div>
+                <div style="width: 500px;height: 600px">
+                    <div id="caja" style="border:1px solid black;width: 100%;height: 100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let caj = document.getElementById('caja');
+        let botones = document.getElementsByTagName("button")[0];
+        let botones1 = document.getElementsByTagName("button")[1];
+        let botones2 = document.getElementsByTagName("button")[2];
+        let botones3 = document.getElementsByTagName("button")[3];
+        let botones4 = document.getElementsByTagName("button")[4];
+        let botones5 = document.getElementsByTagName("button")[5];
+
+
+        botones.addEventListener('click', () => caj.style.background = '#dd6c20')
+        botones1.addEventListener('click', () => caj.style.background = '#dd6c20')
+        botones2.addEventListener('click', () => caj.style.background = '#dd6c20')
+        botones3.addEventListener('click', () => caj.style.background = '#dd6c20')
+        botones4.addEventListener('click', () => caj.style.background = '#dd6c20')
+        botones5.addEventListener('click', () => caj.style.background = '#dd6c20')
+    </script>
+</body>
+
+</html>
