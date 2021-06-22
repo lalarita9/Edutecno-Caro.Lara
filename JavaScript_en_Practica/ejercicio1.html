@@ -47,7 +47,23 @@
         </div>
     </div>
     <script>
-    // Escríbe aquí tu código
+        var boton = document.querySelector('#botton');
+        boton.addEventListener('click', validar);
+
+        function validar() {
+            var name = document.getElementById('nombre').value;
+            var tema = document.getElementById('asunto').value;
+            var message = document.getElementById('mensaje').value;
+            if (name == "") {
+                alert("debes ingresar tu nombre completo");
+            } else if (tema == "") {
+                alert("debes ingrear un asunto");
+            } else if (message == "") {
+                alert("debes ingresar un mensaje");
+            } else {
+                alert("Mensaje enviado con éxito!!!")
+            }
+        }
     </script>
 </body>
 
