@@ -1,3 +1,4 @@
+//Creación datos tabla Radiología//
 let radiologia = [{
         hora: '11:00',
         especialista: 'Ignacio Schulz',
@@ -34,6 +35,7 @@ let radiologia = [{
         prevision: 'FONASA'
     },
 ];
+//Incorporación datos a tabla Radiología//
 var contenidoRadiologia =
     "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>R.U.N</th><th>PREVISION</th></tr>";
 for (var i = 0; i < radiologia.length; i++) {
@@ -45,8 +47,14 @@ for (var i = 0; i < radiologia.length; i++) {
 <td>${radiologia[i].prevision}</td>
 </tr>`;
 }
+//Obtener primera y última atención de Radiología//
 document.getElementById("contenido-radiologia").innerHTML = contenidoRadiologia;
+let rValor1 = Object.values(radiologia[0]);
+document.getElementById("r-cita1").innerHTML = ("~Primera atención: &nbsp" + rValor1[2] + "&nbsp - &nbsp" + rValor1[4] + "~");
+let rValor2 = Object.values(radiologia[4]);
+document.getElementById("r-cita2").innerHTML = ("~Última atención: &nbsp" + rValor2[2] + "&nbsp - &nbsp" + rValor2[4] + "~");
 
+//Creación datos tabla Traumotología//
 let traumotologia = [{
         hora: '8:00',
         especialista: 'María Paz Altuzarra',
@@ -97,6 +105,7 @@ let traumotologia = [{
         prevision: 'ISAPRE'
     },
 ];
+//Incorporación datos a tabla Traumotología//
 var contenidoTraumotologia = "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>R.U.N</th><th>PREVISION</th></tr>";
 
 for (var i = 0; i < traumotologia.length; i++) {
@@ -108,7 +117,14 @@ for (var i = 0; i < traumotologia.length; i++) {
 <td>${traumotologia[i].prevision}</td>
 </tr>`;
 }
+//Obtener datos de primera y última cita de Traumotología//
 document.getElementById("contenido-traumotologia").innerHTML = contenidoTraumotologia;
+let tValor1 = Object.values(traumotologia[0]);
+document.getElementById("t-cita1").innerHTML = ("~Primera atención: &nbsp" + tValor1[2] + "&nbsp - &nbsp" + tValor1[4] + "~");
+let tValor2 = Object.values(traumotologia[6]);
+document.getElementById("t-cita2").innerHTML = ("~Última atención: &nbsp" + tValor2[2] + "&nbsp - &nbsp" + tValor2[4] + "~");
+
+//Creación de datos tabla Dental//
 let dental = [{
         hora: '8:30',
         especialista: 'Andrea Zuñiga',
@@ -152,6 +168,7 @@ let dental = [{
         prevision: 'ISAPRE'
     },
 ];
+//Incorporación de datos a tabla Dental//
 var contenidoDental =
     "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>R.U.N</th><th>PREVISION</th></tr>";
 for (var i = 0; i < dental.length; i++) {
@@ -163,4 +180,9 @@ for (var i = 0; i < dental.length; i++) {
 <td>${dental[i].prevision}</td>
 </tr>`;
 }
+//Obtener datos de primera y última cita tabla Dental//
 document.getElementById("contenido-dental").innerHTML = contenidoDental;
+let dValor1 = Object.values(dental[0]);
+document.getElementById("d-cita1").innerHTML = ("~Primera atención: &nbsp" + dValor1[2] + "&nbsp - &nbsp" + dValor1[4] + "~");
+let dValor2 = Object.values(dental[5]);
+document.getElementById("d-cita2").innerHTML = ("~Última atención: &nbsp" + dValor2[2] + "&nbsp - &nbsp" + dValor2[4] + "~");

@@ -1,6 +1,6 @@
 body {
-    width: 550px;
-    height: 100vw;
+    width: 600px;
+    height: 100%;
     margin: 5px;
     padding: 5px;
 }
@@ -63,4 +63,12 @@ td {
     background-color: #fae3d9;
     color: #351c4d;
     font-family: 'Century Gothic';
+}
+
+h4 {
+    font-family: 'Century Gothic';
+    color: #808080;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 5px;
 }
