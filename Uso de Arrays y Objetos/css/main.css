@@ -1,0 +1,66 @@
+body {
+    width: 550px;
+    height: 100vw;
+    margin: 5px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-style: italic;
+}
+
+th,
+td {
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+.table1 th {
+    background-color: #2096ba;
+    color: #fff;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.table1 td {
+    background-color: #c5d2db;
+    color: #351c4d;
+    font-family: 'Century Gothic';
+}
+
+.table2 th {
+    background-color: #ff7e5f;
+    color: #fff;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.table2 td {
+    background-color: #fbb47b;
+    color: #3f3931;
+    font-family: 'Century Gothic';
+}
+
+.table3 th {
+    background-color: #ffb6b9;
+    color: #fff;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.table3 td {
+    background-color: #fae3d9;
+    color: #351c4d;
+    font-family: 'Century Gothic';
+}
