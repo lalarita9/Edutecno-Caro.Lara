@@ -54,8 +54,8 @@ document.getElementById("r-cita1").innerHTML = ("~Primera atención: &nbsp" + rV
 let rValor2 = Object.values(radiologia[4]);
 document.getElementById("r-cita2").innerHTML = ("~Última atención: &nbsp" + rValor2[2] + "&nbsp - &nbsp" + rValor2[4] + "~");
 
-//Creación datos tabla Traumotología//
-let traumotologia = [{
+//Creación datos tabla Traumatología//
+let traumatologia = [{
         hora: '8:00',
         especialista: 'María Paz Altuzarra',
         paciente: 'Paula Sanchez',
@@ -106,21 +106,21 @@ let traumotologia = [{
     },
 ];
 //Incorporación datos a tabla Traumotología//
-var contenidoTraumotologia = "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>R.U.N</th><th>PREVISION</th></tr>";
-for (var i = 0; i < traumotologia.length; i++) {
-    contenidoTraumotologia += `<tr>
-<td>${traumotologia[i].hora}</td>
-<td>${traumotologia[i].especialista}</td>
-<td>${traumotologia[i].paciente}</td>
-<td>${traumotologia[i].run}</td>
-<td>${traumotologia[i].prevision}</td>
+var contenidoTraumatologia = "<tr><th>HORA</th><th>ESPECIALISTA</th><th>PACIENTE</th><th>R.U.N</th><th>PREVISION</th></tr>";
+for (var i = 0; i < traumatologia.length; i++) {
+    contenidoTraumatologia += `<tr>
+<td>${traumatologia[i].hora}</td>
+<td>${traumatologia[i].especialista}</td>
+<td>${traumatologia[i].paciente}</td>
+<td>${traumatologia[i].run}</td>
+<td>${traumatologia[i].prevision}</td>
 </tr>`;
 }
-document.getElementById("contenido-traumotologia").innerHTML = contenidoTraumotologia;
+document.getElementById("contenido-traumatologia").innerHTML = contenidoTraumatologia;
 //Obtener datos de primera y última cita de Traumotología//
-let tValor1 = Object.values(traumotologia[0]);
+let tValor1 = Object.values(traumatologia[0]);
 document.getElementById("t-cita1").innerHTML = ("~Primera atención: &nbsp" + tValor1[2] + "&nbsp - &nbsp" + tValor1[4] + "~");
-let tValor2 = Object.values(traumotologia[6]);
+let tValor2 = Object.values(traumatologia[6]);
 document.getElementById("t-cita2").innerHTML = ("~Última atención: &nbsp" + tValor2[2] + "&nbsp - &nbsp" + tValor2[4] + "~");
 
 //Creación de datos tabla Dental//
