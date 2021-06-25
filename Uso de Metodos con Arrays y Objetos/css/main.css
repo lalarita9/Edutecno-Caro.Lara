@@ -1,0 +1,96 @@
+body {
+    width: 600px;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+h2 {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-style: italic;
+}
+
+th,
+td {
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+.table1 th {
+    background-color: #2096ba;
+    color: #fff;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.table1 td {
+    background-color: #c5d2db;
+    color: #351c4d;
+    font-family: 'Century Gothic';
+}
+
+.table2 th {
+    background-color: #ff7e5f;
+    color: #fff;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.table2 td {
+    background-color: #fbb47b;
+    color: #3f3931;
+    font-family: 'Century Gothic';
+}
+
+.d-table {
+    color: #351c4d;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-size: 18px;
+    outline: 5px;
+}
+
+.table3 {
+    background-color: #fae3d9;
+    color: #351c4d;
+    font-family: 'Century Gothic';
+    border: none;
+}
+
+h4 {
+    font-family: 'Century Gothic';
+    color: #808080;
+    font-style: italic;
+    font-weight: 200;
+    line-height: 5px;
+}
+
+#usuarios-fonasa {
+    font-family: 'Century Gothic';
+    color: #808080;
+    font-weight: 200;
+    line-height: 10px;
+}
+
+#usuarios-isapre {
+    font-family: 'Century Gothic';
+    color: #808080;
+    font-weight: 200;
+    line-height: 10px;
+}
+
+#usuarios-totales {
+    font-family: 'Century Gothic';
+    color: #808080;
+    font-weight: 200;
+    line-height: 10px;
+}
