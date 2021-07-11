@@ -1,0 +1,58 @@
+body {
+    width: 700px;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+    background-color: #eaf2f3;
+}
+
+h2 {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    font-style: italic;
+}
+
+#contenido {
+    font-family: 'Century Gothic';
+    color: #3e3d53;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.buscar input {
+    border-radius: 5px;
+    border: solid 1px #75c7ff;
+    font-family: 'Century Gothic';
+    padding-left: 5px;
+    height: 20px;
+}
+
+.buscar label {
+    font-family: 'Century Gothic';
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.buscar button {
+    background-color: #75c7ff;
+    border: none;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+#nombre {
+    font-family: 'Century Gothic';
+    color: #3e3d53;
+    font-weight: 200;
+    font-size: 15px;
+}
