@@ -3,63 +3,73 @@ import Animal from './animal.js';
 //Clase hija//
 
 class Leon extends Animal {
-    constructor(nombre, edad, img, comentarios, sonidos) {
-        super(nombre, edad, img, comentarios, sonidos)
+    constructor(nombre, edad, img, comentarios, sonido) {
+        super(nombre, edad, img, comentarios, sonido)
     }
 
     Rugir() {
-        let sound = new sound(this.getSondios());
-        sound.play();
+        this.getSonido()
+        return `<audio controls style="width: 100px; height:25px"><source src="./assets/sounds/Rugido.mp3" type="audio/mpeg"/></audio>`;
+
     }
 
 }
 
 class Lobo extends Animal {
-    constructor(nombre, edad, img, comentarios, sonidos) {
-        super(nombre, edad, img, comentarios, sonidos)
+    constructor(nombre, edad, img, comentarios, sonido) {
+        super(nombre, edad, img, comentarios, sonido)
     }
 
     Aullar() {
-        let sound = new sound(this.getSondios());
-        sound.play();
+
+        this.getSonido()
+        return `<audio controls style="width: 100px; height:25px"><source src="./assets/sounds/Aullido.mp3" type="audio/mpeg"/></audio>`;
+
     }
 
 }
 
 class Oso extends Animal {
-    constructor(nombre, edad, img, comentarios, sonidos) {
-        super(nombre, edad, img, comentarios, sonidos)
+    constructor(nombre, edad, img, comentarios, sonido) {
+        super(nombre, edad, img, comentarios, sonido)
     }
 
     Gruñir() {
-        let sound = new sound(this.getSondios());
-        sound.play();
+
+        this.getSonido()
+        return `<audio controls style="width: 100px; height:25px"><source src="./assets/sounds/Gruñido.mp3" type="audio/mpeg"/></audio>`;
+
     }
 
 }
 
 class Serpiente extends Animal {
-    constructor(nombre, edad, img, comentarios, sonidos) {
-        super(nombre, edad, img, comentarios, sonidos)
+    constructor(nombre, edad, img, comentarios, sonido) {
+        super(nombre, edad, img, comentarios, sonido)
     }
 
     Sisear() {
-        let sound = new sound(this.getSondios());
-        sound.play();
+
+        this.getSonido()
+        return `<audio controls style="width: 100px; height:25px"><source src="./assets/sounds/Siseo.mp3" type="audio/mpeg"/></audio>`;
+
     }
 
 }
 
 class Aguila extends Animal {
-    constructor(nombre, edad, img, comentarios, sonidos) {
-        super(nombre, edad, img, comentarios, sonidos)
+    constructor(nombre, edad, img, comentarios, sonido) {
+        super(nombre, edad, img, comentarios, sonido)
     }
 
     Chillar() {
-        let sound = new sound(this.getSondios());
-        sound.play();
+
+        this.getSonido()
+        return `<audio controls style="width: 100px; height:25px"><source src="./assets/sounds/Chillido.mp3" type="audio/mpeg"/></audio>`;
+
     }
 
 }
+
 
 export { Leon, Lobo, Oso, Serpiente, Aguila };

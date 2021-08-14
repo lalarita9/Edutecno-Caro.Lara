@@ -1,18 +1,18 @@
 //Clase padre//
 
 class Animal {
-    constructor(nombre, edad, img, comentarios, sonidos) {
+    constructor(nombre, edad, img, comentarios, sonido) {
             let Nombre = nombre;
             let Edad = edad;
             let Img = img;
             let Comentarios = comentarios;
-            let Sonidos = sonidos
+            let Sonido = sonido;
 
             this.getNombre = () => Nombre;
             this.getEdad = () => Edad;
             this.getImg = () => Img;
             this.getComentarios = () => Comentarios;
-            this.getSonidos = () => Sonidos;
+            this.getSonido = () => Sonido;
 
             this.setComentarios = (comentarios) => Comentarios = comentarios;
         }
@@ -20,7 +20,7 @@ class Animal {
     get Nombre() { return this.getNombre() };
     get Edad() { return this.getEdad() };
     get Img() { return this.getImg() };
-    get Sonidos() { return this.getSonidos() };
+    get Sonido() { return this.getSonido() };
     get Comentarios() { return this.getComentarios() };
 
     //Método Set//
