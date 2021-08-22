@@ -19,7 +19,7 @@ window.onload = function() {
             //Solicitud de datos a la Appi a través de Get//
             $.ajax({
                 type: "GET",
-                url: `https://www.superheroapi.com/api/10159354226215944/${numHero}`,
+                url: `https://www.superheroapi.com/api.php/10159354226215944/${numHero}`,
                 dataType: "json",
                 success: function(data) {
                     console.log(data);

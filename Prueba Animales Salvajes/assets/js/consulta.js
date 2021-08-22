@@ -1,5 +1,4 @@
 //Consulta de Datos//
-
 let animales = (() => {
 
     const datos = './animales.json'
