@@ -113,7 +113,7 @@ main .main__videos .videos__card .card-text {
   padding: 8px;
 }
 
-/*vendors jquery*/
+/*vendors jquery-ui*/
 @media screen and (max-width: 768px) {
   .header__navbar .navbar__boton {
     border: none;

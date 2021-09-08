@@ -1,16 +1,16 @@
-/*vendors jquery*/
+/*vendors jquery-ui*/
 
 @media screen and (max-width: 768px) {
     .header__navbar {
         .navbar__boton {
-        border: none;
-        color: black;
-        font-weight: bold;
-        font-size: $size2;
-    }
+            border: none;
+            color: black;
+            font-weight: bold;
+            font-size: $size2;
+        }
     }
     .main {
-               width:100%;
+        width: 100%;
         .main__img__principal {
             width: 100%;
             .img__banner {
@@ -23,15 +23,13 @@
         .main__perfil {
             width: 100%;
             margin-left: 25px;
-.img-perfil  {
-    display: block;
-                
+            .img-perfil {
+                display: block;
                 width: 100%;
-               
-                 width: 70px;
-            height: 70px;
-}
-.perfil__datos {
+                width: 70px;
+                height: 70px;
+            }
+            .perfil__datos {
                 display: block;
                 padding: 5px;
                 width: 100%;
