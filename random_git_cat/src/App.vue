@@ -24,14 +24,14 @@
           </select>
           <i id="circle" value="" class="fas fa-circle fa-1x" v-bind:style="{color: color}"></i>
           </div>
-           <div><label for="tamaño">Tamaño</label>
-      <input id="tamaño" type="text" placeholder="ingresar size en px" v-model="tamaño"></div>
+           <div><label for="size">Tamaño</label>
+      <input id="size" type="number" v-model="size"></div>
         </form>
     </div>
    <div class="boton">
      <button type="button" class="btn" @click="crearGatito"><i class="fas fa-cat fa-1x"></i> obtener mi gatito</button>
    </div>
-     <img v-bind:src="imagen" v-bind:style="{width:tamaño, height:tamaño}">
+     <img v-bind:src="imagen">
   </div>
     
 </template>
@@ -48,7 +48,7 @@ export default {
         titulo: '',
         filtro:'',
         color:'',
-        tamaño:'',
+        size: null,
         imagen:'',
         }
             
@@ -56,9 +56,9 @@ export default {
     },
     methods:{
     crearGatito(){
-      fetch(`https://cataas.com/cat/gif/says/${this.titulo}?filter=${this.filtro}&color=${this.color}&tamaño=${this.tamaño}`)
+      fetch(`https://cataas.com/cat/gif/says/${this.titulo}?filter=${this.filtro}&color=${this.color}&size=${this.size}`)
       .then(resp => this.imagen = resp.url)
-      
+     
     },
 
   },
