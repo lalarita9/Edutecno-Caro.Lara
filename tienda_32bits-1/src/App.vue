@@ -1,32 +1,76 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav>
+      <span>32bits</span>
+      <ul>
+      <li><router-link :to="{name: 'inicio'}">Inicio</router-link></li>
+       <li><router-link :to="{name: 'busquedas'}">Búsquedas</router-link></li>
+        <li><router-link :to="{name: 'ventas'}">Ventas</router-link></li>
+         <li><router-link :to="{name: 'total'}">Total</router-link></li>
+    </ul>
+    </nav>
+    <div>
+      <h2>Juegos de PC y consolas</h2>
+<hr>
     </div>
-    <router-view/>
+    
+    
+    <transition name="vista">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 
-<style>
+<script>
+
+export default {
+}
+</script>
+
+<style scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  text-align:center;
+}
+nav {
+  width: 100%;
+  background-color: #323339;
+  padding: 0 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+span {
+ width: 100px;
+ color: #4bbcf4;
+ margin-left: 15px;
+ font-family:'Colonna MT';
+ font-size: 40px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+  font-family: 'Century Gothic';
+  }
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
-#nav {
-  padding: 30px;
+.vista-enter-active, .vista-leave-active {
+    transition: opacity .1s;
+}
+.vista-enter, .vista-leave-to{
+    opacity: 0;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
