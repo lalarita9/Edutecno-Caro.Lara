@@ -29,6 +29,10 @@ export default new Vuex.Store({
                 return cantidad.stock > 0
             })
         },
+        juegosEnStock: (state, getters) => {
+            return getters.totalStock.length;
+
+        },
         totalS(state) {
             return state.juegos.reduce((acumulador, valor) => {
                 return acumulador + valor.stock;
@@ -44,31 +48,35 @@ export default new Vuex.Store({
                 return acumulador + (valor.precio * valor.stock);
             }, 0);
         },
-        ventasHechas(state) {
+        totalVentas: (state) => {
+            return state.ventas;
+        },
+        ventas(state) {
             return state.juegos.filter(producto => producto.stock > 0);
         },
 
     },
     mutations: {
-        ventaJuego(state, juegos) {
+        venderJuegos(state, juegos) {
             if (state.juegos[juegos].stock > 0) {
                 state.juegos[juegos].stock--;
-            } else {
-                state.juegos[juegos].vender = false;
-                alert('Lo sentimos, venta rechazada')
+                alert('Venta realizada')
 
+            } else {
+                state.juegos[juegos].enStock = false;
+                alert('Lo sentimos el producto no está disponible')
             }
             if (state.juegos[juegos].stock == 0) {
-                state.juegos[juegos].vender = false;
+                state.juegos[juegos].enStock = false;
             }
+
         },
     },
     actions: {
-
         vender(context, juegos) {
-            context.commit('ventaJuego', juegos);
-
+            context.commit('venderJuegos', juegos);
         }
     }
+
 
 })

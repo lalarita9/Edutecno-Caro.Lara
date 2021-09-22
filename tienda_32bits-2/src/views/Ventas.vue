@@ -27,22 +27,18 @@
 </template>
 
 <script>
-import { mapActions } from "vuex";
+import { mapGetters } from "vuex";
 export default {
     name: 'Ventas',
     computed: {
-        ventas(){
-            return this.$store.getters.ventasHechas;
-        },
-        juegosEnStock(){
-            return this.$store.getters.totalJuegos;
-        },
+        ...mapGetters(["ventas", "totalJuegos", "juegosEnStock"]),
+       
     },
     methods: {
-        ...mapActions(['vender'])
-        /*vender(index){
-            this.$store.dispatch('vender',index);
-        }*/
+            vender(juegos) {
+      this.$store.dispatch("vender", juegos);
+    },
+        
     },
 }
 </script>
