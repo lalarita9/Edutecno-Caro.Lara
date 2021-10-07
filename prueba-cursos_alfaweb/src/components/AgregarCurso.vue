@@ -35,7 +35,9 @@
             <b-form-group id="input-group-8" label="Descripción:" label-for="input-8">
             <b-form-textarea id="input-8" v-model="categoria.descripcion" placeholder="Ingresar Descripción" itemref="" max-rows="6"></b-form-textarea>
             </b-form-group>
-
+            <b-form-group id="input-group-9" label="Fecha de Registro:" label-for="input-9">
+                <b-form-input id="input-9" v-model="categoria.fecha" type="text" required placeholder="Ingresar Fecha"></b-form-input>
+            </b-form-group>
             <b-form-checkbox v-model="categoria.checked" name="check-button" switch>
       Terminado:<b>{{ categoria.checked }}</b>
     </b-form-checkbox>
@@ -55,19 +57,33 @@ export default {
       categoria: {
         nombre: '',
         imagen: '',
-        cupos: '',
-        inscritos: '',
+        cupos: parseInt(''),
+        inscritos: parseInt(''),
         duracion: '',
-        costo: '',
+        costo: parseInt(''),
         codigo: '',
         descripcion: '',
-        checked: false,                
+        fecha: '',
+        checked: '',                
       },
     };
   },
   methods: {
     agregar(){
-            if (this.categoria.nombre && this.categoria.imagen && this.categoria.cupos >= 0 && this.categoria.inscritos > 0 && this.categoria.duracion && this.categoria.costo > 0  && this.categoria.codigo  && this.categoria.descripcion && this.categoria.checked) {
+            if (this.categoria.nombre && this.categoria.imagen && this.categoria.cupos >= 0 && this.categoria.inscritos > 0 && this.categoria.duracion && this.categoria.costo > 0  && this.categoria.codigo  && this.categoria.descripcion && this.categoria.fecha && this.categoria.checked) {
+                let data = {
+                    nombre: this.categoria.nombre,
+                    imagen: this.categoria.imagen,
+                    cupos: parseInt(this.categoria.cupos),
+                    inscritos: parseInt(this.categoria.inscritos),
+                    duracion: this.categoria.duracion,
+                    costo: parseInt(this.categoria.costo),
+                    codigo: this.categoria.codigo,
+                    descripcion: this.categoria.descripcion,
+                    fecha: this.categoria.fecha,
+                    checked: this.categoria.checked,
+                    id: this.categoria.id,
+                }
                 this.$confirm('¿Quieres agregar un curso?', 'Informativo', {
                             confirmButtonText: 'Sí',
                             cancelButtonText: 'No',
@@ -78,7 +94,7 @@ export default {
                                 type: 'success',
                                 message: '¡El curso se creó exitosamente!'
                             });
-                            this.$store.dispatch('agregarCurso', this.categoria);
+                            this.$store.dispatch('agregarCurso', data);
                             this.$router.push('/administracion');
                             }).catch(() => {
                             this.$message({

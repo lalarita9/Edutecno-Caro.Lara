@@ -7,15 +7,7 @@
     <b-card title="HTML Básico" img-src= "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png" img-alt="Image" img-top style="max-width: 22rem;" class="bg-danger mb-5 text-white">
       <hr>
        <b-card-text><h4>Información</h4></b-card-text>
-       <b-card-body>
-      <b-card-title>Card Title</b-card-title>
-      <b-card-sub-title class="mb-2">Card Sub Title</b-card-sub-title>
-      <b-card-text>
-        Some quick example text to build on the card title and make up the bulk of the card's
-        content.
-      </b-card-text>
-    </b-card-body>
-         
+              
       <b-card-text><p>Costo: $10.000.-</p>
       <p>Duración: 1 mes</p></b-card-text>
       <b-card-text> <p>Cupos: 35</p>

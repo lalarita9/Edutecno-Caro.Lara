@@ -36,7 +36,7 @@ const routes = [{
         component: () =>
             import ( /* webpackChunkName: "registro" */ '../views/Registro.vue'),
         meta: {
-            login: true
+            login: false,
         }
     },
 

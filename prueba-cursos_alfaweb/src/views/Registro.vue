@@ -27,8 +27,8 @@ export default {
     },
     methods: {
         registrar() {
-            console.log(firebase.auth)
-            console.log(firebase.default.auth)
+            /*console.log(firebase.auth)
+            console.log(firebase.default.auth)*/
 firebase.auth().createUserWithEmailAndPassword( this.email, this.password)
 .then(()=>{
     alert('usurio registrado correctamente')

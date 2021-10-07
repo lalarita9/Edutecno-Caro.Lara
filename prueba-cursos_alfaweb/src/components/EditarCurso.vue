@@ -36,12 +36,13 @@
             </b-form-group>
 
             <b-form-group id="input-group-9" label="Fecha de Registro:" label-for="input-9">
-                <b-form-input id="input-9" v-model="categoria.fecha" type="fecha" required placeholder="Ingresar Fecha"></b-form-input>
+                <b-form-input id="input-9" v-model="categoria.fecha" type="text" required placeholder="Ingresar Fecha"></b-form-input>
             </b-form-group>
-             <b-form-checkbox v-model="categoria.checked" name="check-button" switch>
+            <b-form-group id="checkbox-group-10" label="" label-for="checkbox-10">
+             <b-form-checkbox id="check-9"  v-model="categoria.checked" name="check-button" switch>
       Terminado:<b>{{ categoria.checked }}</b>
     </b-form-checkbox>
-
+</b-form-group>
             <div class="text-center p-4">
 <b-button type="submit" variant="success">Actualizar</b-button>
 <b-button type="reset" variant="danger" class="mx-3">Limpiar Formulario</b-button>
@@ -71,7 +72,7 @@ import {mapGetters} from 'vuex';
                 codigo: '',
                 descripcion: '',
                 fecha: '',
-                checked: 'false',
+                checked: '',
             }
         }
     },
@@ -104,10 +105,10 @@ import {mapGetters} from 'vuex';
                 let data = {
                     nombre: this.categoria.nombre,
                     imagen: this.categoria.imagen,
-                    cupos: this.categoria.cupos,
-                    inscritos: this.categoria.inscritos,
+                    cupos: parseInt(this.categoria.cupos),
+                    inscritos: parseInt(this.categoria.inscritos),
                     duracion: this.categoria.duracion,
-                    costo: this.categoria.costo,
+                    costo: parseInt(this.categoria.costo),
                     codigo: this.categoria.codigo,
                     descripcion: this.categoria.descripcion,
                     fecha: this.categoria.fecha,

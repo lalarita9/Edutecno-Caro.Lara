@@ -1,7 +1,7 @@
 <template>
 
     <div class="container my-4 text-center">
-<div><h2>Administración</h2><b-button v-b-modal.modal-1 type="button" class="mb-5 px-5 mx-5" pill variant="primary"  @click="$router.push('/agregar')" @click.prevent="addCurso">Agregar Curso</b-button></div>
+<div><h2>Administración</h2><b-button type="button" class="mb-5 px-5 mx-5" pill variant="primary"  @click="$router.push('/agregar')" @click.prevent="addCurso">Agregar Curso</b-button></div>
         
         <table class="table" >
         <thead>

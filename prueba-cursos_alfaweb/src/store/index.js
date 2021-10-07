@@ -12,7 +12,7 @@ export default new Vuex.Store({
     state: {
         cursos: [],
         user: {},
-
+        edit: false,
         loading: false,
     },
     getters: {
@@ -57,8 +57,6 @@ export default new Vuex.Store({
             return getters.cursosFalse.length;
 
         },
-
-
     },
     mutations: {
         addUsuario(state, userData) {
@@ -86,8 +84,8 @@ export default new Vuex.Store({
                         descripcion: element.data().descripcion,
                         fecha: element.data().fecha,
                         checked: element.data().checked,
-                    });
-                })
+                    })
+                });
                 commit('mutarCurso', arreglo);
             })
         },
@@ -101,6 +99,7 @@ export default new Vuex.Store({
                 costo: data.costo,
                 codigo: data.codigo,
                 descripcion: data.descripcion,
+                fecha: data.fecha,
                 checked: data.checked,
             }).then(resp => {
                 console.log(resp);

@@ -30,9 +30,6 @@ Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 Vue.use(ElementUI);
 
-
-
-
 new Vue({
 
     router,
